@@ -64,10 +64,342 @@ License: You must have a valid license purchased only from themeforest(the above
 
 					<!-- BEGIN EXAMPLE TABLE PORTLET-->
 					<div class="portlet light">
-						 <h1>Welcome to Renter Verification</h1>
+						 <h1>ভাড়াটিয়া ভারিফিকেসন এ স্বাগতম </h1></br></br>
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+								<a class="dashboard-stat dashboard-stat-light blue-soft" href="citizenList.php">
+									<div class="visual">
+										<i class="fa fa-trophy"></i>
+									</div>
+									<div class="details">
+										<div class="number">
+											২৩৩৩৪৪৪
+										</div>
+										<div class="desc">
+											মোট ভাড়াটিয়া
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+								<a class="dashboard-stat dashboard-stat-light green-soft" href="holdingaddressList.php">
+									<div class="visual">
+										<i class="fa fa-shopping-cart"></i>
+									</div>
+									<div class="details">
+										<div class="number">
+											৩৩৪৪৪
+										</div>
+										<div class="desc">
+											মোট বাড়িওয়ালা
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
 						</div>
 					</div>
 				</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<div class="portlet light ">
+						<div class="portlet-title">
+							<div class="caption">
+								<i class="icon-share font-blue-steel hide"></i>
+								<span class="caption-subject font-blue-steel bold uppercase">সর্বশেষ নিবন্ধিত ভাড়াটিয়া</span>
+							</div>
+						</div>
+						<div class="portlet-body">
+							<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 300px;"><div class="scroller" style="height: 300px; overflow: hidden; width: auto;" data-always-visible="1" data-rail-visible="0" data-initialized="1">
+									<table class="table table-striped table-bordered table-hover" id="sample_1ddd">
+										<thead>
+										<tr>
+											<th>সিরিয়াল#</th>
+											<th>
+												নাম
+											</th>
+											<th>
+												মোবাইল নাম্বার
+											</th>
+											<th>
+												জাতীয় পরিচয় পত্র
+											</th>
+											<th>
+
+											</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr class="odd gradeX">
+											<td>1</td>
+											<td>
+												আল-আমিন হোসাইন
+											</td>
+											<td>
+												+880-01912-109434
+											</td>
+											<td>
+												4554354533445
+											</td>
+											<td>
+												<a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+											</td>
+										</tr>
+										<tr class="odd gradeX">
+											<td>2</td>
+											<td>
+												তাসকিন আহমেদ
+											</td>
+											<td>
+												+880-01912-109434
+											</td>
+											<td>
+												4554354533445
+											</td>
+											<td>
+												<a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+											</td>
+										</tr>
+										<tr class="odd gradeX">
+											<td>3</td>
+											<td>
+												মুস্তাফিজুর রহমান
+											</td>
+											<td>
+												+880-01912-109435
+											</td>
+											<td>
+												4554354533443
+											</td>
+
+											<td>
+												<a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+											</td>
+										</tr>
+										<tr class="odd gradeX">
+											<td>4</td>
+											<td>
+												মাসরাফাফি
+											</td>
+											<td>
+												+880-01912-109434
+											</td>
+											<td>
+												4554354533445
+											</td>
+											<td>
+												<a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+											</td>
+										</tr>
+										<tr class="odd gradeX">
+											<td>5</td>
+											<td>
+												হাবিবুল বাসার সুমন
+											</td>
+											<td>
+												+880-01912-109434
+											</td>
+											<td>
+												4554354533445
+											</td>
+											<td>
+												<a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+											</td>
+										</tr>
+										<tr class="odd gradeX">
+											<td>6</td>
+											<td>
+												আকরাম খান
+											</td>
+											<td>
+												+880-01912-109434
+											</td>
+											<td>
+												4554354533445
+											</td>
+											<td>
+												<a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+											</td>
+										</tr>
+
+										<tr class="odd gradeX">
+											<td>7</td>
+											<td>
+												অপি
+											</td>
+											<td>
+												+880-01912-109434
+											</td>
+											<td>
+												4554354533445
+											</td>
+											<td>
+												<a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+											</td>
+										</tr>
+
+										</tbody>
+									</table>
+								</div><div class="slimScrollBar" style="width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 155.979px; background: rgb(187, 187, 187);"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(234, 234, 234);"></div></div>
+							<div class="scroller-footer">
+								<div class="btn-arrow-link pull-right">
+									<a href="citizenList.php">আরও</a>
+									<i class="icon-arrow-right"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="portlet light tasks-widget">
+						<div class="portlet-title">
+							<div class="caption">
+								<i class="icon-share font-green-haze hide"></i>
+								<span class="caption-subject font-green-haze bold uppercase">সর্বশেষ নিবন্ধিত  বাড়িওয়ালা</span>
+							</div>
+
+						</div>
+						<div class="portlet-body">
+							<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 300px;"><div class="scroller" style="height: 300px; overflow: hidden; width: auto;" data-always-visible="1" data-rail-visible="0" data-initialized="1">
+									<table class="table table-striped table-bordered table-hover" id="sample_1ddd">
+										<thead>
+										<tr>
+											<th>সিরিয়াল#</th>
+											<th>
+												নাম
+											</th>
+											<th>
+												মোবাইল নাম্বার
+											</th>
+											<th>
+												জাতীয় পরিচয় পত্র
+											</th>
+											<th>
+
+											</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr class="odd gradeX">
+											<td>1</td>
+											<td>
+												সাকিব আল হাসান
+											</td>
+											<td>
+												+880-01912-109434
+											</td>
+											<td>
+												4554354533445
+											</td>
+											<td>
+												<a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+											</td>
+										</tr>
+										<tr class="odd gradeX">
+											<td>2</td>
+											<td>
+												সাব্বির রহমান
+											</td>
+											<td>
+												+880-01912-109434
+											</td>
+											<td>
+												4554354533445
+											</td>
+											<td>
+												<a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+											</td>
+										</tr>
+										<tr class="odd gradeX">
+											<td>3</td>
+											<td>
+												সম্য সরকার
+											</td>
+											<td>
+												+880-01912-109435
+											</td>
+											<td>
+												4554354533443
+											</td>
+
+											<td>
+												<a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+											</td>
+										</tr>
+										<tr class="odd gradeX">
+											<td>4</td>
+											<td>
+												নাসির হোসাইন
+											</td>
+											<td>
+												+880-01912-109434
+											</td>
+											<td>
+												4554354533445
+											</td>
+											<td>
+												<a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+											</td>
+										</tr>
+										<tr class="odd gradeX">
+											<td>5</td>
+											<td>
+												তামিম
+											</td>
+											<td>
+												+880-01912-109434
+											</td>
+											<td>
+												4554354533445
+											</td>
+											<td>
+												<a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+											</td>
+										</tr>
+										<tr class="odd gradeX">
+											<td>6</td>
+											<td>
+												মিথুন
+											</td>
+											<td>
+												+880-01912-109434
+											</td>
+											<td>
+												4554354533445
+											</td>
+											<td>
+												<a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+											</td>
+										</tr>
+										<tr class="odd gradeX">
+											<td>7</td>
+											<td>
+												আবুল হাসান
+											</td>
+											<td>
+												+880-01912-109434
+											</td>
+											<td>
+												4554354533445
+											</td>
+											<td>
+												<a href="holdingaddressList.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+											</td>
+										</tr>
+										</tbody>
+									</table>
+								</div><div class="slimScrollBar" style="width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 155.979px; background: rgb(187, 187, 187);"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(234, 234, 234);"></div></div>
+							<div class="scroller-footer">
+								<div class="btn-arrow-link pull-right">
+									<a href="citizenList.php">আরও</a>
+									<i class="icon-arrow-right"></i>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- END PAGE CONTENT -->
