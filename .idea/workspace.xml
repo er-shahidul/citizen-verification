@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f88aa9e-1b2d-47a7-80c9-cab1318d84db" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.2.git/HEAD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.2.git/config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.2.git/description" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.2.git/hooks/applypatch-msg.sample" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.2.git/hooks/commit-msg.sample" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.2.git/hooks/post-update.sample" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.2.git/hooks/pre-applypatch.sample" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.2.git/hooks/pre-commit.sample" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.2.git/hooks/pre-rebase.sample" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.2.git/hooks/prepare-commit-msg.sample" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.2.git/hooks/update.sample" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.2.git/info/exclude" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard.php" afterPath="$PROJECT_DIR$/dashboard.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
     </list>
     <ignored path="citizen-verification.iws" />
     <ignored path=".idea/workspace.xml" />
