@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN HEAD -->
 <head>
     <meta charset="utf-8"/>
-    <title>Metronic | Managed Datatables</title>
+    <title>Renter Verification</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -50,6 +50,7 @@ License: You must have a valid license purchased only from themeforest(the above
         .checker{
             display: none;
         }
+
     </style>
 </head>
 <!-- END HEAD -->
@@ -69,94 +70,136 @@ License: You must have a valid license purchased only from themeforest(the above
 
                     <!-- BEGIN EXAMPLE TABLE PORTLET-->
                     <div class="portlet light">
-                        <h2>Citizen Form</h2>
+                        <h2>ভাড়াটিয়া যোগ করুন </h2>
                         <hr>
                         <form action="citizenList.php" class="form-horizontal">
                             <div class="form-body">
                                 <div class="form-group">
-                                    <label class="col-md-3 control-label">Name</label>
+                                    <label class="col-md-3 control-label">ভাড়াটিয়া/বাড়িওলার নাম </label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control input-circle" placeholder="Enter text">
+                                        <input type="text" class="form-control " >
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-body">
                                 <div class="form-group">
-                                    <label class="col-md-3 control-label">Father's Name</label>
+                                    <label class="col-md-3 control-label">পিতার নাম </label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control input-circle" placeholder="Enter text">
+                                        <input type="text" class="form-control " >
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-body">
+
                                 <div class="form-group">
-                                    <label class="col-md-3 control-label">Mother's Name</label>
+                                    <label class="col-md-3 control-label">জন্ম তারিখ</label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control input-circle" placeholder="Enter text">
+                                        <input type="text" class="form-control " >
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-body">
+
                                 <div class="form-group">
-                                    <label class="col-md-3 control-label">Gender</label>
+                                    <label class="col-md-3 control-label">বৈবাহিক অবস্থা</label>
                                     <div class="col-md-4">
-                                        <select class="form-control input-circle" name="">
-                                            <option>Male</option>
-                                            <option>Female</option>
+                                        <input type="text" class="form-control " >
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">স্থায়ী ঠিকানা </label>
+                                    <div class="col-md-4">
+                                        <textarea type="text" class="form-control " ></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">পেশা ও প্রতিষ্টান কর্মস্তলের ঠিকানা</label>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control " >
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">ধর্ম</label>
+                                    <div class="col-md-4">
+                                        <select class="form-control" name="">
+                                            <option>ইসলাম  </option>
+                                            <option>হিন্দু </option>
+                                            <option>ক্রিস্টান</option>
                                         </select>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="form-body">
                                 <div class="form-group">
-                                    <label class="col-md-3 control-label">Religion</label>
+                                    <label class="col-md-3 control-label">শিক্ষাগত যোগ্যতা</label>
                                     <div class="col-md-4">
-                                        <select class="form-control input-circle" name="">
-                                            <option>Islam</option>
-                                            <option>Cristan</option>
-                                            <option>Hindu</option>
+                                        <input type="text" class="form-control " >
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">মোবাইল নাম্বার</label>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" >
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">ইমেইল আইডি</label>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" >
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">পাসপোর্ট নাম্বার </label>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control " >
+                                    </div>
+                                </div>
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">বিভাগ</label>
+                                        <div class="col-md-4">
+                                            <select class="form-control" name="">
+                                                <option>দযা করে সিলেক্ট করুন </option>
+                                                <option>ঢাকা  </option>
+                                                <option>খুলনা </option>
+                                                <option>চট্টগ্রাম</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">জেলা</label>
+                                        <div class="col-md-4">
+                                            <select class="form-control" name="">
+                                                <option>দযা করে সিলেক্ট করুন </option>
+                                                <option>সাভার  </option>
+                                                <option> ঢাকা</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">থানা</label>
+                                        <div class="col-md-4">
+                                            <select class="form-control" name="">
+                                                <option>দযা করে সিলেক্ট করুন </option>
+                                                <option>সাভার  সদর </option>
+                                                <option>ঢাকা</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                    <label class="col-md-3 control-label">ওয়ার্ড  </label>
+                                    <div class="col-md-4">
+                                        <select class="form-control" name="">
+                                            <option>দযা করে সিলেক্ট করুন </option>
+                                            <option>ওয়ার্ড নম্বর ১</option>
+                                            <option>ওয়ার্ড নম্বর ২</option>
                                         </select>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="form-body">
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label">Phone Number</label>
-                                    <div class="col-md-4">
-                                        <input type="text" class="form-control input-circle" placeholder="Enter text">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-body">
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label">Birth Date</label>
-                                    <div class="col-md-4">
-                                        <input type="text" class="form-control input-circle" placeholder="Enter text">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-body">
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label">National Id</label>
-                                    <div class="col-md-4">
-                                        <input type="text" class="form-control input-circle" placeholder="Enter text">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-body">
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label">Address</label>
-                                    <div class="col-md-4">
-                                        <textarea  class="form-control input-circle"></textarea>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="form-group last">
-                                <label class="control-label col-md-3">Picture</label>
+                                <label class="control-label col-md-3">ছবি </label>
                                 <div class="col-md-9">
                                     <div class="fileinput fileinput-new" data-provides="fileinput">
                                         <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
@@ -167,13 +210,13 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div>
 														<span class="btn default btn-file">
 														<span class="fileinput-new">
-														Select image </span>
+														ছবি নির্বাচন করুন </span>
 														<span class="fileinput-exists">
-														Change </span>
+														পরিবর্তন </span>
 														<input type="file" name="...">
 														</span>
                                             <a href="#" class="btn red fileinput-exists" data-dismiss="fileinput">
-                                                Remove </a>
+                                                মুছে ফেল   </a>
                                         </div>
                                     </div>
                                     <div class="clearfix margin-top-10">
@@ -181,14 +224,179 @@ License: You must have a valid license purchased only from themeforest(the above
                                     </div>
                                 </div>
                             </div>
+                            <fieldset style="margin-bottom: 20px;">
+                                <legend style="border: none;">জরুরি যোগাযোগ</legend>
+                                <div style="border:1px solid #e5e5e5; padding-top: 20px;">
+
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">নাম</label>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control " >
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">ঠিকানা</label>
+                                            <div class="col-md-4">
+                                                <textarea type="text" class="form-control " ></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">সম্পর্ক</label>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control " >
+                                            </div>
+                                        </div>
+
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 20px;">
+                                <legend style="border: none;">গৃহ কর্মী</legend>
+                                <div style="border:1px solid #e5e5e5; padding-top: 20px;">
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">নাম</label>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control " >
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">জাতীয় পরিচয় পত্র</label>
+                                            <div class="col-md-4">
+                                                <input id="nationalId" type="text" class="form-control " >
+                                            </div>
+                                            <span class="verify" style="cursor:pointer">ভেরিফাই </span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">মোবাইল নাম্বার</label>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control " >
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">স্থায়ী ঠিকানা </label>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control " >
+                                            </div>
+                                        </div>
+                                </div>
+                            </fieldset>
+
+
+                            <fieldset style="margin-bottom: 20px;">
+                                <legend style="border: none;">ড্রাইভার</legend>
+                                <div style="border:1px solid #e5e5e5; padding-top: 20px;">
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">নাম</label>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control " >
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">জাতীয় পরিচয় পত্র</label>
+                                            <div class="col-md-4">
+                                                <input id="nationalId" type="text" class="form-control " >
+                                            </div>
+                                            <span class="verify" style="cursor:pointer">ভেরিফাই </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-body">
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">মোবাইল নাম্বার</label>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control " >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-body">
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">স্থায়ী ঠিকানা </label>
+                                            <div class="col-md-4">
+                                                <textarea type="text" class="form-control " ></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 20px;">
+                                <legend style="border: none;">পূরবর্তী বাড়িওয়ালা</legend>
+                                <div style="border:1px solid #e5e5e5; padding-top: 20px;">
+
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">নাম</label>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control " >
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">মোবাইল নাম্বার</label>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control " >
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">স্থায়ী ঠিকানা </label>
+                                            <div class="col-md-4">
+                                                <textarea type="text" class="form-control " ></textarea>
+                                            </div>
+                                        </div>
+                                </div>
+                            </fieldset>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">পূরবর্তী বাসা সাড়ার কারণ</label>
+                                    <div class="col-md-4">
+                                        <textarea type="text" class="form-control "></textarea>
+                                    </div>
+                                </div>
+
+                            <fieldset style="margin-bottom: 20px;">
+                                <legend style="border: none;">বর্তমান বাড়িওয়ালা</legend>
+                                <div style="border:1px solid #e5e5e5; padding-top: 20px;">
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">নাম</label>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" >
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">মোবাইল নাম্বার</label>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control " >
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">স্থায়ী ঠিকানা </label>
+                                            <div class="col-md-4">
+                                                <textarea type="text" class="form-control " ></textarea>
+                                            </div>
+                                        </div>
+                                </div>
+                            </fieldset>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">বর্তমান বাড়িতে কোন তারিখ থেকে বসবাস </label>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control " >
+                                    </div>
+                                </div>
+
                             <div class="form-actions">
                                 <div class="row">
                                     <div class="col-md-offset-3 col-md-9">
-                                        <button type="submit" class="btn btn-circle blue">Submit</button>
-                                        <button type="button" class="btn btn-circle default">Cancel</button>
+                                        <button type="submit" class="btn btn-circle blue">সাবমিট</button>
+                                        <button type="button" class="btn btn-circle default">বাতিল</button>
                                     </div>
                                 </div>
                             </div>
+                            <div>
                         </form>
 
                         </div>
@@ -242,6 +450,12 @@ License: You must have a valid license purchased only from themeforest(the above
         Layout.init(); // init current layout
         Demo.init(); // init demo features
         TableManaged.init();
+
+        jQuery('.verify').on('click',function(){
+                console.log('asci');
+               jQuery('#nationalId').toggleClass('spinner');
+        })
+
     });
 </script>
 </body>

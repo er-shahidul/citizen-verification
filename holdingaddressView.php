@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN HEAD -->
 <head>
     <meta charset="utf-8"/>
-    <title>Metronic | Managed Datatables</title>
+    <title>Renter Verification</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -65,63 +65,214 @@ License: You must have a valid license purchased only from themeforest(the above
     <div class="page-content">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
 
+                <div class="col-md-12">
                     <!-- BEGIN EXAMPLE TABLE PORTLET-->
                     <div class="portlet light">
-                        <h2>Citizen</h2>
+                        <h2>হোল্ডিং এড্রেস </h2>
                         <hr>
                         <div class="portlet-body">
+                            <div class="fileinput-new thumbnail" style="position: absolute; top:100px; left: 700px;">
+                                <img src="http://www.placehold.it/300x250/EFEFEF/AAAAAA&amp;text=no+image" alt=""/>
+                            </div>
                             <div class="row static-info">
                                 <div class="col-md-5 name">
-                                    Name:
+                                    নাম:
                                 </div>
                                 <div class="col-md-7 value">
-                                    Taskin Ahamed
+                                    ---------------------
                                 </div>
                             </div>
                             <div class="row static-info">
                                 <div class="col-md-5 name">
-                                    Phone Number:
+                                    পিতার নাম :
                                 </div>
                                 <div class="col-md-7 value">
-                                    +880-01912109075
+                                    ---------------------
                                 </div>
                             </div>
                             <div class="row static-info">
                                 <div class="col-md-5 name">
-                                    Gender:
+                                    বৈবাহিক অবস্থা:
                                 </div>
                                 <div class="col-md-7 value">
-                                    Male
+                                    ---------------------
                                 </div>
                             </div>
                             <div class="row static-info">
                                 <div class="col-md-5 name">
-                                    National ID:
+                                    স্থায়ী ঠিকানা :
                                 </div>
                                 <div class="col-md-7 value">
-                                    122343866435
+                                    ---------------------
                                 </div>
                             </div>
                             <div class="row static-info">
                                 <div class="col-md-5 name">
-                                    Religion:
+                                    পেশা ও প্রতিষ্টান কর্মস্তলের ঠিকানা:
                                 </div>
                                 <div class="col-md-7 value">
-                                    Islam
+                                    ---------------------
                                 </div>
                             </div>
                             <div class="row static-info">
                                 <div class="col-md-5 name">
-                                    BirthDate:
+                                    ধর্ম:
                                 </div>
                                 <div class="col-md-7 value">
-                                    20/11/94
+                                    ---------------------
+                                </div>
+                            </div>
+                            <div class="row static-info">
+                                <div class="col-md-5 name">
+                                    বাড়ির ধরন:
+                                </div>
+                                <div class="col-md-7 value">
+                                    ---------------------
+                                </div>
+                            </div>
+                            <div class="row static-info">
+                                <div class="col-md-5 name">
+                                    মোবাইল নাম্বার:
+                                </div>
+                                <div class="col-md-7 value">
+                                    ---------------------
+                                </div>
+                            </div>
+                            <div class="row static-info">
+                                <div class="col-md-5 name">
+                                    ইমেইল আইডি:
+                                </div>
+                                <div class="col-md-7 value">
+                                    ---------------------
+                                </div>
+                            </div>
+
+                            <div class="row static-info">
+                                <div class="col-md-5 name">
+                                    পাসপোর্ট নাম্বার:
+                                </div>
+                                <div class="col-md-7 value">
+                                    ---------------------
+                                </div>
+                            </div>
+
+                            <fieldset style="margin-bottom: 20px;">
+                                <legend>জরুরি যোগাযোগ</legend>
+                                <div class="row static-info">
+                                    <div class="col-md-5 name">
+                                        নাম:
+                                    </div>
+                                    <div class="col-md-7 value">
+                                        ---------------------
+                                    </div>
+                                </div>
+                                <div class="row static-info">
+                                    <div class="col-md-5 name">
+                                        ঠিকানা:
+                                    </div>
+                                    <div class="col-md-7 value">
+                                        ---------------------
+                                    </div>
+                                </div>
+                                <div class="row static-info">
+                                    <div class="col-md-5 name">
+                                        সম্পর্ক:
+                                    </div>
+                                    <div class="col-md-7 value">
+                                        ---------------------
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset style="margin-bottom: 20px;">
+                                <legend>ড্রাইভার</legend>
+                                <div class="row static-info">
+                                    <div class="col-md-5 name">
+                                        নাম:
+                                    </div>
+                                    <div class="col-md-7 value">
+                                        ---------------------
+                                    </div>
+                                </div>
+                                <div class="row static-info">
+                                    <div class="col-md-5 name">
+                                        জাতীয় পরিচয় পত্র:
+                                    </div>
+                                    <div class="col-md-7 value">
+                                        ---------------------
+                                    </div>
+                                </div>
+                                <div class="row static-info">
+                                    <div class="col-md-5 name">
+                                        মোবাইল নাম্বার:
+                                    </div>
+                                    <div class="col-md-7 value">
+                                        ---------------------
+                                    </div>
+                                </div>
+                                <div class="row static-info">
+                                    <div class="col-md-5 name">
+                                        স্থায়ী ঠিকানা:
+                                    </div>
+                                    <div class="col-md-7 value">
+                                        ---------------------
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset style="margin-bottom: 20px;">
+                                <legend>নিরাপত্তা প্রহরী</legend>
+                                <div class="row static-info">
+                                    <div class="col-md-5 name">
+                                        নাম:
+                                    </div>
+                                    <div class="col-md-7 value">
+                                        ---------------------
+                                    </div>
+                                </div>
+                                <div class="row static-info">
+                                    <div class="col-md-5 name">
+                                        জাতীয় পরিচয় পত্র:
+                                    </div>
+                                    <div class="col-md-7 value">
+                                        ---------------------
+                                    </div>
+                                </div>
+                                <div class="row static-info">
+                                    <div class="col-md-5 name">
+                                        মোবাইল নাম্বার:
+                                    </div>
+                                    <div class="col-md-7 value">
+                                        ---------------------
+                                    </div>
+                                </div>
+                                <div class="row static-info">
+                                    <div class="col-md-5 name">
+                                        স্থায়ী ঠিকানা:
+                                    </div>
+                                    <div class="col-md-7 value">
+                                        ---------------------
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="portlet-title">
+                                <div class="tools">
+                                    <a href="javascript:;" class="collapse">
+                                    </a>
+                                    <a href="#portlet-config" data-toggle="modal" class="config">
+                                    </a>
+                                    <a href="javascript:;" class="reload">
+                                    </a>
+                                    <a href="javascript:;" class="remove">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                <div id="gmap_marker" class="gmaps">
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -156,25 +307,24 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
 <!-- END CORE PLUGINS -->
 <!-- BEGIN PAGE LEVEL PLUGINS -->
-<script type="text/javascript" src="assets/global/plugins/select2/select2.min.js"></script>
-<script type="text/javascript" src="assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
-<script type="text/javascript" src="assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js"></script>
-
+<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<script src="assets/global/plugins/gmaps/gmaps.min.js" type="text/javascript"></script>
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 <script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
 <script src="assets/admin/layout3/scripts/layout.js" type="text/javascript"></script>
 <script src="assets/admin/layout3/scripts/demo.js" type="text/javascript"></script>
-<script src="assets/admin/pages/scripts/table-managed.js"></script>
+<script src="assets/admin/pages/scripts/maps-google.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
 <script>
     jQuery(document).ready(function() {
         Metronic.init(); // init metronic core components
         Layout.init(); // init current layout
         Demo.init(); // init demo features
-        TableManaged.init();
+        MapsGoogle.init();
     });
 </script>
+<!-- END JAVASCRIPTS -->
 </body>
 <!-- END BODY -->
 </html>

@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8">
-<title>Metronic | Metronic | Admin Dashboard Template</title>
+<title>Renter Verification</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1" name="viewport">
 <meta content="" name="description">
@@ -64,7 +64,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 					<!-- BEGIN EXAMPLE TABLE PORTLET-->
 					<div class="portlet light">
-						 <h1>Welcome to Citizen Verification</h1>
+						 <h1>Welcome to Renter Verification</h1>
 						</div>
 					</div>
 				</div>
@@ -82,7 +82,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN CORE PLUGINS -->
 <!--[if lt IE 9]>
 <script src="assets/global/plugins/respond.min.js"></script>
-<script src="assets/global/plugins/excanvas.min.js"></script> 
+<script src="assets/global/plugins/excanvas.min.js"></script>
 <![endif]-->
 <script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
 <script src="assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
@@ -116,7 +116,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="assets/admin/pages/scripts/tasks.js" type="text/javascript"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
 <script>
-jQuery(document).ready(function() {    
+jQuery(document).ready(function() {
    Metronic.init(); // init metronic core componets
    Layout.init(); // init layout
    Demo.init(); // init demo(theme settings page)

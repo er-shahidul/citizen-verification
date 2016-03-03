@@ -4,7 +4,7 @@
         <div class="container">
             <!-- BEGIN LOGO -->
             <div  class="page-logo">
-                <a style="font-size: 20px; line-height: 63px;" href="dashboard.php">CITIZEN VERIFICATION</a>
+                <a style="font-size: 20px; line-height: 63px;" href="dashboard.php">ভাড়াটিয়া ভারিফিকেসন</a>
             </div>
             <!-- END LOGO -->
             <!-- BEGIN RESPONSIVE MENU TOGGLER -->
@@ -16,16 +16,16 @@
                     <li class="dropdown dropdown-user dropdown-dark">
                         <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                             <img alt="" class="img-circle" src="assets/admin/layout3/img/avatar9.jpg">
-                            <span class="username username-hide-mobile">Nick</span>
+                            <span class="username username-hide-mobile">অ্যাডমিন </span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-default">
                             <li>
                                 <a href="extra_profile.html">
-                                    <i class="icon-user"></i> My Profile </a>
+                                    <i class="icon-user"></i> আমার প্রোফাইল </a>
                             </li>
                             <li>
                                 <a href="login.html">
-                                    <i class="icon-key"></i> Log Out </a>
+                                    <i class="icon-key"></i> লগ আউট </a>
                             </li>
                         </ul>
                     </li>
@@ -42,34 +42,34 @@
             <div class="hor-menu ">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="dashboard.php">Dashboard</a>
+                        <a href="dashboard.php">ড্যাশবোর্ড  </a>
                     </li>
                     <li class="menu-dropdown classic-menu-dropdown active">
                         <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;">
-                            Citizens <i class="fa fa-angle-down"></i>
+                            ভাড়াটিয়া <i class="fa fa-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu pull-left">
                             <li class=" ">
-                                <a href="citizennew.php">Add New Citizen </a>
+                                <a href="citizennew.php">নতুন ভাড়াটিয়া তালিকা ভুক্তি </a>
                             </li>
 
                             <li class="">
-                                <a href="citizenList.php">Citizen's List </a>
+                                <a href="citizenList.php">ভাড়াটিয়া তালিকা </a>
                             </li>
                         </ul>
                     </li>
 
                     <li class="menu-dropdown classic-menu-dropdown active">
                         <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;">
-                            Holding Address <i class="fa fa-angle-down"></i>
+                            হোল্ডিং এড্রেস  <i class="fa fa-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu pull-left">
                             <li class=" ">
-                                <a href="holdingaddressNew.php">Add New Holding Address </a>
+                                <a href="holdingaddressNew.php">নতুন হোল্ডিং তালিকা ভুক্তি  </a>
                             </li>
 
                             <li class="">
-                                <a href="holdingaddressList.php">Holding Address List </a>
+                                <a href="holdingaddressList.php">হোল্ডিং তালিকা</a>
                             </li>
                         </ul>
                     </li>

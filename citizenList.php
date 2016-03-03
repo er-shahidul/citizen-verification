@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8"/>
-<title>Metronic | Managed Datatables</title>
+<title>Renter Verification</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -89,7 +89,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						<div class="portlet-title">
 							<div class="caption">
 								<i class="fa fa-cogs font-green-sharp"></i>
-								<span class="caption-subject font-green-sharp bold uppercase">Citizen's List</span>
+								<span class="caption-subject font-green-sharp bold uppercase">ভাড়াটিয়া তালিকা </span>
 							</div>
 							<div class="tools">
 								<a href="javascript:;" class="collapse">
@@ -109,31 +109,96 @@ License: You must have a valid license purchased only from themeforest(the above
 										<div class="btn-group">
                                             <a href="citizennew.php">
                                                 <button id="sample_editable_1_new" class="btn green">
-                                                    Add New <i class="fa fa-plus"></i>
+													নুতন যোগ করুন  <i class="fa fa-plus"></i>
                                                 </button>
                                             </a>
 										</div>
 									</div>
 								</div>
 							</div>
-							<table class="table table-striped table-bordered table-hover" id="sample_1">
+					 	<div style="margin-bottom: 20px;">
+							<div>
+								<div class="form-group">
+									<label class="col-md-2 control-label">বিভাগ</label>
+									<div class="col-md-3">
+										<select class="form-control" name="">
+											<option>দযা করে সিলেক্ট করুন </option>
+											<option>ঢাকা  </option>
+											<option>খুলনা </option>
+											<option>চট্টগ্রাম</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="col-md-2 control-label">জেলা</label>
+									<div class="col-md-3">
+										<select class="form-control" name="">
+											<option>দযা করে সিলেক্ট করুন </option>
+											<option>সাভার  </option>
+											<option> ঢাকা</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div style="clear: both;"></div>
+							<div>
+								<div class="form-group">
+									<label class="col-md-2 control-label">থানা</label>
+									<div class="col-md-3">
+										<select class="form-control" name="">
+											<option>দযা করে সিলেক্ট করুন </option>
+											<option>সাভার  সদর </option>
+											<option>ঢাকা</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="col-md-2 control-label">ওয়ার্ড  </label>
+									<div class="col-md-3">
+										<select class="form-control" name="">
+											<option>দযা করে সিলেক্ট করুন </option>
+											<option>ওয়ার্ড নম্বর ১</option>
+											<option>ওয়ার্ড নম্বর ২</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div style="clear: both;"></div>
+							<div>
+								<div class="form-group">
+									<label class="col-md-2 control-label">মোবাইল নাম্বার  </label>
+									<div class="col-md-3">
+										<input type="text" class="form-control" name="">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="col-md-2 control-label">জাতীয় পরিচয় পত্র  </label>
+									<div class="col-md-3">
+										<input type="text" class="form-control" name="">
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-circle blue">অনুসন্ধান</button>
+
+						</div>
+							<table class="table table-striped table-bordered table-hover" id="sample_1ddd">
 							<thead>
 							<tr>
-                                <th>Sl#</th>
+                                <th>সিরিয়াল#</th>
 								<th>
-									 Name
+									নাম
 								</th>
 								<th>
-									 Phone Number
+									মোবাইল নাম্বার
 								</th>
 								<th>
-									 National ID
+									জাতীয় পরিচয় পত্র
 								</th>
-                                <th>
-                                    Gender
-                                </th>
 								<th>
-									 Action
+
 								</th>
 							</tr>
 							</thead>
@@ -141,7 +206,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<tr class="odd gradeX">
                                 <td>1</td>
 								<td>
-                                     Al-amin Hossain
+									আল-আমিন হোসাইন
 								</td>
 								<td>
 									+880-01912-109434
@@ -149,17 +214,14 @@ License: You must have a valid license purchased only from themeforest(the above
 								<td>
 									 4554354533445
 								</td>
-								<td class="center">
-									 Male
-								</td>
 								<td>
-                                    <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> View</a>
+                                    <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 								</td>
 							</tr>
 							<tr class="odd gradeX">
                                 <td>2</td>
 								<td>
-									 Taskin Ahmed
+									তাসকিন আহমেদ
 								</td>
 								<td>
 									+880-01912-109434
@@ -167,17 +229,14 @@ License: You must have a valid license purchased only from themeforest(the above
 								<td>
 									 4554354533445
 								</td>
-								<td class="center">
-									 Male
-								</td>
 								<td>
-                                    <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> View</a>
+                                    <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 								</td>
 							</tr>
 							<tr class="odd gradeX">
                                 <td>3</td>
 								<td>
-									 Mustafizur Rahman
+									মুস্তাফিজুর রহমান
 								</td>
 								<td>
 									+880-01912-109435
@@ -185,17 +244,15 @@ License: You must have a valid license purchased only from themeforest(the above
 								<td>
 									 4554354533443
 								</td>
-								<td class="center">
-									 Male
-								</td>
+
 								<td>
-                                    <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> View</a>
+                                    <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 								</td>
 							</tr>
 							<tr class="odd gradeX">
                                 <td>4</td>
 								<td>
-									 Masharafee
+									মাসরাফাফি
 								</td>
 								<td>
 									+880-01912-109434
@@ -203,11 +260,8 @@ License: You must have a valid license purchased only from themeforest(the above
 								<td>
 									 4554354533445
 								</td>
-								<td class="center">
-									 Male
-								</td>
 								<td>
-                                    <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> View</a>
+                                    <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 								</td>
 							</tr>
 							</tbody>

@@ -10,31 +10,19 @@ var MapsGoogle = function () {
 
     var mapMarker = function () {
         var map = new GMaps({
-            div: '#gmap_marker',
-                lat: -51.38739,
-                lng: -6.187181,
+                div: '#gmap_marker',
+                lat: 23.7464653,
+                lng: 90.3760125,
         });
         map.addMarker({
-           lat: -51.38739,
-                lng: -6.187181,
-            title: 'Lima',
-            details: {
-                database_id: 42,
-                author: 'HPNeo'
-            },
-            click: function (e) {
-                if (console.log) console.log(e);
-                alert('You clicked in this marker');
-            }
-        });
-        map.addMarker({
-            lat: -12.042,
-            lng: -77.028333,
-            title: 'Marker with InfoWindow',
+            lat: 23.7464653,
+            lng: 90.3760125,
+            title: 'Dhaka Dhaka Dohar',
             infoWindow: {
-                content: '<span style="color:#000">HTML Content!</span>'
+                content: '<span style="color:#000">Dhaka Dhaka Dhandmondi</span>'
             }
         });
+
         map.setZoom(5);
     }
 
@@ -189,13 +177,7 @@ var MapsGoogle = function () {
     return {
         //main function to initiate map samples
         init: function () {
-            mapBasic();
             mapMarker();
-            mapGeolocation();
-            mapGeocoding();
-            mapPolylines();
-            mapPolygone();
-            mapRoutes();
         }
 
     };

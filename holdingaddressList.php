@@ -17,38 +17,38 @@ License: You must have a valid license purchased only from themeforest(the above
 <!--<![endif]-->
 <!-- BEGIN HEAD -->
 <head>
-<meta charset="utf-8"/>
-<title>Metronic | Managed Datatables</title>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-<meta content="" name="description"/>
-<meta content="" name="author"/>
-<!-- BEGIN GLOBAL MANDATORY STYLES -->
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css">
-<link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
-<link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
-<!-- END GLOBAL MANDATORY STYLES -->
-<!-- BEGIN PAGE LEVEL STYLES -->
-<link rel="stylesheet" type="text/css" href="assets/global/plugins/select2/select2.css"/>
-<link rel="stylesheet" type="text/css" href="assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css"/>
-<!-- END PAGE LEVEL STYLES -->
-<!-- BEGIN THEME STYLES -->
-<link href="assets/global/css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css">
-<link href="assets/global/css/plugins.css" rel="stylesheet" type="text/css">
-<link href="assets/admin/layout3/css/layout.css" rel="stylesheet" type="text/css">
-<link href="assets/admin/layout3/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color">
-<link href="assets/admin/layout3/css/custom.css" rel="stylesheet" type="text/css">
-<!-- END THEME STYLES -->
-<link rel="shortcut icon" href="favicon.ico"/>
+	<meta charset="utf-8"/>
+	<title>Renter Verification</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta content="" name="description"/>
+	<meta content="" name="author"/>
+	<!-- BEGIN GLOBAL MANDATORY STYLES -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css">
+	<link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
+	<!-- END GLOBAL MANDATORY STYLES -->
+	<!-- BEGIN PAGE LEVEL STYLES -->
+	<link rel="stylesheet" type="text/css" href="assets/global/plugins/select2/select2.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css"/>
+	<!-- END PAGE LEVEL STYLES -->
+	<!-- BEGIN THEME STYLES -->
+	<link href="assets/global/css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css">
+	<link href="assets/global/css/plugins.css" rel="stylesheet" type="text/css">
+	<link href="assets/admin/layout3/css/layout.css" rel="stylesheet" type="text/css">
+	<link href="assets/admin/layout3/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color">
+	<link href="assets/admin/layout3/css/custom.css" rel="stylesheet" type="text/css">
+	<!-- END THEME STYLES -->
+	<link rel="shortcut icon" href="favicon.ico"/>
 
-    <style>
-        .checker{
-            display: none;
-        }
-    </style>
+	<style>
+		.checker{
+			display: none;
+		}
+	</style>
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -71,7 +71,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<h4 class="modal-title">Modal title</h4>
 						</div>
 						<div class="modal-body">
-							 Widget settings form goes here
+							Widget settings form goes here
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn blue">Save changes</button>
@@ -89,7 +89,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						<div class="portlet-title">
 							<div class="caption">
 								<i class="fa fa-cogs font-green-sharp"></i>
-								<span class="caption-subject font-green-sharp bold uppercase">Citizen's List</span>
+								<span class="caption-subject font-green-sharp bold uppercase">হোল্ডিং তালিকা  </span>
 							</div>
 							<div class="tools">
 								<a href="javascript:;" class="collapse">
@@ -107,110 +107,164 @@ License: You must have a valid license purchased only from themeforest(the above
 								<div class="row">
 									<div class="col-md-6">
 										<div class="btn-group">
-                                            <a href="citizennew.php">
-                                                <button id="sample_editable_1_new" class="btn green">
-                                                    Add New <i class="fa fa-plus"></i>
-                                                </button>
-                                            </a>
+											<a href="citizennew.php">
+												<button id="sample_editable_1_new" class="btn green">
+													নুতন যোগ করুন  <i class="fa fa-plus"></i>
+												</button>
+											</a>
 										</div>
 									</div>
 								</div>
 							</div>
-							<table class="table table-striped table-bordered table-hover" id="sample_1">
-							<thead>
-							<tr>
-                                <th>Sl#</th>
-								<th>
-									 Name
-								</th>
-								<th>
-									 Phone Number
-								</th>
-								<th>
-									 National ID
-								</th>
-                                <th>
-                                    Gender
-                                </th>
-								<th>
-									 Action
-								</th>
-							</tr>
-							</thead>
-							<tbody>
-							<tr class="odd gradeX">
-                                <td>1</td>
-								<td>
-                                     Al-amin Hossain
-								</td>
-								<td>
-									+880-01912-109434
-								</td>
-								<td>
-									 4554354533445
-								</td>
-								<td class="center">
-									 Male
-								</td>
-								<td>
-                                    <a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> View</a>
-								</td>
-							</tr>
-							<tr class="odd gradeX">
-                                <td>2</td>
-								<td>
-									 Taskin Ahmed
-								</td>
-								<td>
-									+880-01912-109434
-								</td>
-								<td>
-									 4554354533445
-								</td>
-								<td class="center">
-									 Male
-								</td>
-								<td>
-                                    <a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> View</a>
-								</td>
-							</tr>
-							<tr class="odd gradeX">
-                                <td>3</td>
-								<td>
-									 Mustafizur Rahman
-								</td>
-								<td>
-									+880-01912-109435
-								</td>
-								<td>
-									 4554354533443
-								</td>
-								<td class="center">
-									 Male
-								</td>
-								<td>
-                                    <a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> View</a>
-								</td>
-							</tr>
-							<tr class="odd gradeX">
-                                <td>4</td>
-								<td>
-									 Masharafee
-								</td>
-								<td>
-									+880-01912-109434
-								</td>
-								<td>
-									 4554354533445
-								</td>
-								<td class="center">
-									 Male
-								</td>
-								<td>
-                                    <a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> View</a>
-								</td>
-							</tr>
-							</tbody>
+							<div style="margin-bottom: 20px;">
+								<div>
+									<div class="form-group">
+										<label class="col-md-2 control-label">বিভাগ</label>
+										<div class="col-md-3">
+											<select class="form-control" name="">
+												<option>দযা করে সিলেক্ট করুন </option>
+												<option>ঢাকা  </option>
+												<option>খুলনা </option>
+												<option>চট্টগ্রাম</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-2 control-label">জেলা</label>
+										<div class="col-md-3">
+											<select class="form-control" name="">
+												<option>দযা করে সিলেক্ট করুন </option>
+												<option>সাভার  </option>
+												<option> ঢাকা</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div style="clear: both;"></div>
+								<div>
+									<div class="form-group">
+										<label class="col-md-2 control-label">থানা</label>
+										<div class="col-md-3">
+											<select class="form-control" name="">
+												<option>দযা করে সিলেক্ট করুন </option>
+												<option>সাভার  সদর </option>
+												<option>ঢাকা</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-2 control-label">ওয়ার্ড  </label>
+										<div class="col-md-3">
+											<select class="form-control" name="">
+												<option>দযা করে সিলেক্ট করুন </option>
+												<option>ওয়ার্ড নম্বর ১</option>
+												<option>ওয়ার্ড নম্বর ২</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div style="clear: both;"></div>
+								<div>
+									<div class="form-group">
+										<label class="col-md-2 control-label">মোবাইল নাম্বার  </label>
+										<div class="col-md-3">
+											<input type="text" class="form-control" name="">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-2 control-label">জাতীয় পরিচয় পত্র  </label>
+										<div class="col-md-3">
+											<input type="text" class="form-control" name="">
+										</div>
+									</div>
+								</div>
+								<button type="submit" class="btn btn-circle blue">অনুসন্ধান</button>
+
+							</div>
+							<table class="table table-striped table-bordered table-hover" id="sample_1ddd">
+								<thead>
+								<tr>
+									<th>সিরিয়াল#</th>
+									<th>
+										নাম
+									</th>
+									<th>
+										মোবাইল নাম্বার
+									</th>
+									<th>
+										জাতীয় পরিচয় পত্র
+									</th>
+									<th>
+
+									</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr class="odd gradeX">
+									<td>1</td>
+									<td>
+										আল-আমিন হোসাইন
+									</td>
+									<td>
+										+880-01912-109434
+									</td>
+									<td>
+										4554354533445
+									</td>
+									<td>
+										<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+									</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>2</td>
+									<td>
+										তাসকিন আহমেদ
+									</td>
+									<td>
+										+880-01912-109434
+									</td>
+									<td>
+										4554354533445
+									</td>
+									<td>
+										<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+									</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>3</td>
+									<td>
+										মুস্তাফিজুর রহমান
+									</td>
+									<td>
+										+880-01912-109435
+									</td>
+									<td>
+										4554354533443
+									</td>
+
+									<td>
+										<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+									</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>4</td>
+									<td>
+										মাসরাফাফি
+									</td>
+									<td>
+										+880-01912-109434
+									</td>
+									<td>
+										4554354533445
+									</td>
+									<td>
+										<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+									</td>
+								</tr>
+								</tbody>
 							</table>
 						</div>
 					</div>
@@ -233,7 +287,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN CORE PLUGINS -->
 <!--[if lt IE 9]>
 <script src="assets/global/plugins/respond.min.js"></script>
-<script src="assets/global/plugins/excanvas.min.js"></script> 
+<script src="assets/global/plugins/excanvas.min.js"></script>
 <![endif]-->
 <script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
 <script src="assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
@@ -257,12 +311,12 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="assets/admin/layout3/scripts/demo.js" type="text/javascript"></script>
 <script src="assets/admin/pages/scripts/table-managed.js"></script>
 <script>
-jQuery(document).ready(function() {       
-   Metronic.init(); // init metronic core components
-Layout.init(); // init current layout
-Demo.init(); // init demo features
-   TableManaged.init();
-});
+	jQuery(document).ready(function() {
+		Metronic.init(); // init metronic core components
+		Layout.init(); // init current layout
+		Demo.init(); // init demo features
+		TableManaged.init();
+	});
 </script>
 </body>
 <!-- END BODY -->

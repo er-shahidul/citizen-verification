@@ -2,7 +2,7 @@ var TableManaged = function () {
 
     var initTable1 = function () {
 
-        var table = $('#sample_1');
+        var table = $('#sample_1_deleteee');
 
         // begin first table
         table.dataTable({
@@ -32,13 +32,11 @@ var TableManaged = function () {
             "columns": [{
                 "orderable": false
             }, {
-                "orderable": true
-            }, {
                 "orderable": false
             }, {
                 "orderable": false
             }, {
-                "orderable": true
+                "orderable": false
             }, {
                 "orderable": false
             }],
@@ -50,7 +48,7 @@ var TableManaged = function () {
             "pageLength": 5,            
             "pagingType": "bootstrap_full_number",
             "language": {
-                "search": "My search: ",
+                "search": "অনুসন্ধান: ",
                 "lengthMenu": "  _MENU_ records",
                 "paginate": {
                     "previous":"Prev",
