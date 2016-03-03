@@ -20,7 +20,7 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-default">
                             <li>
-                                <a href="extra_profile.html">
+                                <a href="userview.php">
                                     <i class="icon-user"></i> আমার প্রোফাইল </a>
                             </li>
                             <li>
@@ -70,6 +70,20 @@
 
                             <li class="">
                                 <a href="holdingaddressList.php">হোল্ডিং তালিকা</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown classic-menu-dropdown active">
+                        <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;">
+                            ব্যবহারকারী <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu pull-left">
+                            <li class=" ">
+                                <a href="usernew.php">নতুন ব্যবহারকারী তালিকা ভুক্তি  </a>
+                            </li>
+
+                            <li class="">
+                                <a href="userList.php">ব্যবহারকারী  তালিকা</a>
                             </li>
                         </ul>
                     </li>
