@@ -292,7 +292,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												4554354533445
 											</td>
 											<td>
-												<a href="citizenview.php" rel="tooltip" title="view-action" class="btn green-haze btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+												<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn green-haze btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 											</td>
 										</tr>
 										<tr class="odd gradeX">
@@ -307,7 +307,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												4554354533445
 											</td>
 											<td>
-												<a href="citizenview.php" rel="tooltip" title="view-action" class="btn green-haze btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+												<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn green-haze btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 											</td>
 										</tr>
 										<tr class="odd gradeX">
@@ -323,7 +323,7 @@ License: You must have a valid license purchased only from themeforest(the above
 											</td>
 
 											<td>
-												<a href="citizenview.php" rel="tooltip" title="view-action" class="btn green-haze btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+												<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn green-haze btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 											</td>
 										</tr>
 										<tr class="odd gradeX">
@@ -338,7 +338,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												4554354533445
 											</td>
 											<td>
-												<a href="citizenview.php" rel="tooltip" title="view-action" class="btn green-haze btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+												<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn green-haze btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 											</td>
 										</tr>
 										<tr class="odd gradeX">
@@ -353,7 +353,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												4554354533445
 											</td>
 											<td>
-												<a href="citizenview.php" rel="tooltip" title="view-action" class="btn green-haze btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+												<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn green-haze btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 											</td>
 										</tr>
 										<tr class="odd gradeX">
@@ -368,7 +368,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												4554354533445
 											</td>
 											<td>
-												<a href="citizenview.php" rel="tooltip" title="view-action" class="btn green-haze btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+												<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn green-haze btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 											</td>
 										</tr>
 										<tr class="odd gradeX">
@@ -383,7 +383,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												4554354533445
 											</td>
 											<td>
-												<a href="citizenview.php" rel="tooltip" title="view-action" class="btn green-haze btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+												<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn green-haze btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 											</td>
 										</tr>
 										</tbody>
