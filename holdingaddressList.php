@@ -107,7 +107,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								<div class="row">
 									<div class="col-md-6">
 										<div class="btn-group">
-											<a href="citizennew.php">
+											<a href="holdingaddressNew.php">
 												<button id="sample_editable_1_new" class="btn green">
 													নুতন যোগ করুন  <i class="fa fa-plus"></i>
 												</button>
@@ -198,6 +198,9 @@ License: You must have a valid license purchased only from themeforest(the above
 										জাতীয় পরিচয় পত্র
 									</th>
 									<th>
+										হাল্নাগাত
+									</th>
+									<th>
 
 									</th>
 								</tr>
@@ -215,7 +218,15 @@ License: You must have a valid license purchased only from themeforest(the above
 										4554354533445
 									</td>
 									<td>
+										সম্পন্ন
+									</td>
+									<td>
 										<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+										<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
+										<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
+										<a href="renterNew.php" class="btn purple-plum btn-xs" >ভাড়াটিয়া যোগ</a>
+										<a href="renterList.php" class="btn purple-plum btn-xs" >ভাড়াটিয়া তালিকা </a>
+										<a href="sms.php" class="btn purple-plum btn-xs" >সেন্ড এস এম এস </a>
 									</td>
 								</tr>
 								<tr class="odd gradeX">
@@ -230,7 +241,15 @@ License: You must have a valid license purchased only from themeforest(the above
 										4554354533445
 									</td>
 									<td>
+										সম্পন্ন
+									</td>
+									<td>
 										<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+										<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
+										<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
+										<a href="renterNew.php" class="btn purple-plum btn-xs" >ভাড়াটিয়া যোগ</a>
+										<a href="renterList.php" class="btn purple-plum btn-xs" >ভাড়াটিয়া তালিকা </a>
+										<a href="sms.php" class="btn purple-plum btn-xs" >সেন্ড এস এম এস </a>
 									</td>
 								</tr>
 								<tr class="odd gradeX">
@@ -244,9 +263,17 @@ License: You must have a valid license purchased only from themeforest(the above
 									<td>
 										4554354533443
 									</td>
+									<td>
+										সম্পন্ন
+									</td>
 
 									<td>
 										<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+										<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
+										<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
+										<a href="renterNew.php" class="btn purple-plum btn-xs" >ভাড়াটিয়া যোগ</a>
+										<a href="renterList.php" class="btn purple-plum btn-xs" >ভাড়াটিয়া তালিকা </a>
+										<a href="sms.php" class="btn purple-plum btn-xs" >সেন্ড এস এম এস </a>
 									</td>
 								</tr>
 								<tr class="odd gradeX">
@@ -261,7 +288,15 @@ License: You must have a valid license purchased only from themeforest(the above
 										4554354533445
 									</td>
 									<td>
+										সম্পন্ন
+									</td>
+									<td>
 										<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+										<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
+										<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
+										<a href="renterNew.php" class="btn purple-plum btn-xs" >ভাড়াটিয়া যোগ</a>
+										<a href="renterList.php" class="btn purple-plum btn-xs" >ভাড়াটিয়া তালিকা </a>
+										<a href="sms.php" class="btn purple-plum btn-xs" >সেন্ড এস এম এস </a>
 									</td>
 								</tr>
 								</tbody>

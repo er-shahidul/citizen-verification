@@ -64,7 +64,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 					<!-- BEGIN EXAMPLE TABLE PORTLET-->
 					<div class="portlet light">
-						 <h1>ভাড়াটিয়া ভারিফিকেসন এ স্বাগতম </h1></br></br>
+						 <h1>ভাড়াটিয়া ভেরিফিকেসন   এ স্বাগতম </h1></br></br>
 						<div class="row">
 							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 								<a class="dashboard-stat dashboard-stat-light blue-soft" href="citizenList.php">

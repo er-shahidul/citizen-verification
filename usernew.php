@@ -111,6 +111,50 @@ License: You must have a valid license purchased only from themeforest(the above
                                         </select>
                                     </div>
                                 </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">বিভাগ</label>
+                                    <div class="col-md-4">
+                                        <select class="form-control" name="">
+                                            <option>দযা করে সিলেক্ট করুন </option>
+                                            <option>ঢাকা  </option>
+                                            <option>খুলনা </option>
+                                            <option>চট্টগ্রাম</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">জেলা</label>
+                                    <div class="col-md-4">
+                                        <select class="form-control" name="">
+                                            <option>দযা করে সিলেক্ট করুন </option>
+                                            <option>সাভার  </option>
+                                            <option> ঢাকা</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">থানা</label>
+                                    <div class="col-md-4">
+                                        <select class="form-control" name="">
+                                            <option>দযা করে সিলেক্ট করুন </option>
+                                            <option>সাভার  সদর </option>
+                                            <option>ঢাকা</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">ওয়ার্ড  </label>
+                                    <div class="col-md-4">
+                                        <select class="form-control" name="">
+                                            <option>দযা করে সিলেক্ট করুন </option>
+                                            <option>ওয়ার্ড নম্বর ১</option>
+                                            <option>ওয়ার্ড নম্বর ২</option>
+                                        </select>
+                                    </div>
+                                </div>
 
 
                             <div class="form-group last">

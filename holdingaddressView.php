@@ -65,15 +65,24 @@ License: You must have a valid license purchased only from themeforest(the above
     <div class="page-content">
         <div class="container">
             <div class="row">
-
                 <div class="col-md-12">
                     <!-- BEGIN EXAMPLE TABLE PORTLET-->
                     <div class="portlet light">
+
                         <h2>হোল্ডিং এড্রেস </h2>
                         <hr>
                         <div class="portlet-body">
-                            <div class="fileinput-new thumbnail" style="position: absolute; top:100px; left: 700px;">
-                                <img src="http://www.placehold.it/300x250/EFEFEF/AAAAAA&amp;text=no+image" alt=""/>
+                            <div  style="position: absolute; top:100px; left: 700px;">
+                                <div class="fileinput-new thumbnail">
+                                    <img src="http://www.placehold.it/300x250/EFEFEF/AAAAAA&amp;text=no+image" alt=""/>
+                                </div>
+                                <div style="margin-bottom: 20px;">
+                                    <a href="holdingaddressNew.php">
+                                        <button id="sample_editable_1_new" class="btn green">
+                                            ভাড়াটিয়া যোগ করুন  <i class="fa fa-plus"></i>
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
                             <div class="row static-info">
                                 <div class="col-md-5 name">

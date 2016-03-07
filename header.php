@@ -4,7 +4,7 @@
         <div class="container">
             <!-- BEGIN LOGO -->
             <div  class="page-logo">
-                <a style="font-size: 20px; line-height: 63px;" href="dashboard.php">ভাড়াটিয়া ভারিফিকেসন</a>
+                <a style="font-size: 20px; line-height: 63px;" href="dashboard.php">ভাড়াটিয়া ভেরিফিকেসন  </a>
             </div>
             <!-- END LOGO -->
             <!-- BEGIN RESPONSIVE MENU TOGGLER -->
@@ -46,21 +46,6 @@
                     </li>
                     <li class="menu-dropdown classic-menu-dropdown active">
                         <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;">
-                            ভাড়াটিয়া <i class="fa fa-angle-down"></i>
-                        </a>
-                        <ul class="dropdown-menu pull-left">
-                            <li class=" ">
-                                <a href="citizennew.php">নতুন ভাড়াটিয়া তালিকা ভুক্তি </a>
-                            </li>
-
-                            <li class="">
-                                <a href="citizenList.php">ভাড়াটিয়া তালিকা </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="menu-dropdown classic-menu-dropdown active">
-                        <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;">
                             হোল্ডিং এড্রেস  <i class="fa fa-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu pull-left">
@@ -75,6 +60,28 @@
                     </li>
                     <li class="menu-dropdown classic-menu-dropdown active">
                         <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;">
+                            ভাড়াটিয়া <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu pull-left">
+
+                            <li class="">
+                                <a href="renterList.php">ভাড়াটিয়া তালিকা </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown classic-menu-dropdown active">
+                        <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;">
+                            অভিযুক্ত<i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu pull-left">
+
+                            <li class="">
+                                <a href="allegated-renterList.php">অভিযুক্তদের তালিকা </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown classic-menu-dropdown active">
+                        <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;">
                             ব্যবহারকারী <i class="fa fa-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu pull-left">
@@ -84,6 +91,17 @@
 
                             <li class="">
                                 <a href="userList.php">ব্যবহারকারী  তালিকা</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-dropdown classic-menu-dropdown active">
+                        <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;">
+                            থানা <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu pull-left">
+                            <li class="">
+                                <a href="thanaList.php">থানার  তালিকা</a>
                             </li>
                         </ul>
                     </li>

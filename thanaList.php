@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--
+<!-- 
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.1
 Version: 3.2.0
 Author: KeenThemes
@@ -41,8 +41,6 @@ License: You must have a valid license purchased only from themeforest(the above
     <link href="assets/admin/layout3/css/layout.css" rel="stylesheet" type="text/css">
     <link href="assets/admin/layout3/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color">
     <link href="assets/admin/layout3/css/custom.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css"/>
-
     <!-- END THEME STYLES -->
     <link rel="shortcut icon" href="favicon.ico"/>
 
@@ -64,49 +62,105 @@ License: You must have a valid license purchased only from themeforest(the above
 <div class="page-container">
     <div class="page-content">
         <div class="container">
+            <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+            <div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                            <h4 class="modal-title">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                            Widget settings form goes here
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn blue">Save changes</button>
+                            <button type="button" class="btn default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
             <div class="row">
                 <div class="col-md-12">
-
                     <!-- BEGIN EXAMPLE TABLE PORTLET-->
                     <div class="portlet light">
-                        <h2>নতুন হোল্ডিং এড্রেস যোগ করুন </h2>
-                        <hr>
-                        <form action="citizenList.php" class="form-horizontal">
-                            <div class="form-body">
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label">নাম </label>
-                                    <div class="col-md-4">
-                                        <input type="text" class="form-control " >
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label">মোবাইল নাম্বার</label>
-                                    <div class="col-md-4">
-                                        <input type="text" class="form-control" >
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label">ইমেইল আইডি</label>
-                                    <div class="col-md-4">
-                                        <input type="text" class="form-control" >
-                                    </div>
-                                </div>
+                        <div class="portlet-title">
+                            <div class="caption">
+                                <i class="fa fa-cogs font-green-sharp"></i>
+                                <span class="caption-subject font-green-sharp bold uppercase">থানার তালিকা  </span>
                             </div>
-                            <div class="form-actions">
+                            <div class="tools">
+                                <a href="javascript:;" class="collapse">
+                                </a>
+                                <!--<a href="#portlet-config" data-toggle="modal" class="config">
+                                </a>-->
+                                <a href="javascript:;" class="reload">
+                                </a>
+                                <a href="javascript:;" class="remove">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portlet-body">
+                            <div class="table-toolbar">
                                 <div class="row">
-                                    <div class="col-md-offset-3 col-md-9">
-                                        <button type="submit" class="btn btn-circle blue">সাবমিট</button>
-                                        <button type="button" class="btn btn-circle default">বাতিল</button>
+                                    <div class="col-md-6">
+                                        <div class="btn-group">
+                                            <a href="#">
+                                                <button id="sample_editable_1_new" class="btn green">
+                                                    নুতন যোগ করুন  <i class="fa fa-plus"></i>
+                                                </button>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                            <table class="table table-striped table-bordered table-hover" id="sample_1ddd">
+                                <thead>
+                                <tr>
+                                    <th>সিরিয়াল#</th>
+                                    <th>
+                                        থানার নাম
+                                    </th>
+                                    <th>
+                                        ইমেইল
+                                    </th>
+                                    <th>
+                                        ঠিকানা
+                                    </th>
 
+                                    <th>
+
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="odd gradeX">
+                                    <td>1</td>
+                                    <td>
+                                        Dhaka Savar
+                                    </td>
+
+                                    <td>
+                                        alamin@gmail.com
+                                    </td>
+
+                                    <td>
+                                        Dhaka
+                                    </td>
+                                    <td>
+                                        <a href="thanaView.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
+                    <!-- END EXAMPLE TABLE PORTLET-->
                 </div>
             </div>
-
         </div>
     </div>
     <!-- END PAGE CONTENT -->
@@ -140,8 +194,6 @@ License: You must have a valid license purchased only from themeforest(the above
 <script type="text/javascript" src="assets/global/plugins/select2/select2.min.js"></script>
 <script type="text/javascript" src="assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
-<script type="text/javascript" src="assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js"></script>
-
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 <script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
