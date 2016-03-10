@@ -5,7 +5,7 @@ $password = $_POST['password'];
 
 
 if($username == 'superadmin' && $password == 'p@secret'){
-    header('Location:/dashbaord.php');
+    header('Location:/dashboard.php');
     exit;
 }
 elseif($username == 'renter' && $password == 'p@secret'){
