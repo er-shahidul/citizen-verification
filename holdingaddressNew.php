@@ -87,7 +87,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-md-3 control-label">ইমেইল আইডি</label>
+                                    <label class="col-md-3 control-label">জাতীয় পরিচয় পত্র</label>
                                     <div class="col-md-4">
                                         <input type="text" class="form-control" >
                                     </div>

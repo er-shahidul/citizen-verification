@@ -126,6 +126,13 @@ License: You must have a valid license purchased only from themeforest(the above
                                 </div>
 
                                 <div class="form-group">
+                                    <label class="col-md-3 control-label">ভাড়াটিয়ার সংখা </label>
+                                    <div class="col-md-4">
+                                        <input type="number" class="form-control" >
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
                                     <label class="col-md-3 control-label">ধর্ম</label>
                                     <div class="col-md-4">
                                         <select class="form-control" name="">

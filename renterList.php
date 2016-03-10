@@ -107,7 +107,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								<div class="row">
 									<div class="col-md-6">
 										<div class="btn-group">
-                                            <a href="citizennew.php">
+                                            <a href="renterNew.php">
                                                 <button id="sample_editable_1_new" class="btn green">
 													নুতন যোগ করুন  <i class="fa fa-plus"></i>
                                                 </button>
@@ -198,6 +198,9 @@ License: You must have a valid license purchased only from themeforest(the above
 									জাতীয় পরিচয় পত্র
 								</th>
 								<th>
+									অবস্থা
+								</th>
+								<th>
 
 								</th>
 							</tr>
@@ -215,11 +218,15 @@ License: You must have a valid license purchased only from themeforest(the above
 									 4554354533445
 								</td>
 								<td>
+									কার্যকর
+								</td>
+								<td>
 
                                     <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 									<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
 									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
 									<a href="report.php" rel="tooltip" title="allegation" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অভিজুক্ত করুন </a>
+									<a href="status.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন </a>
 								</td>
 							</tr>
 							<tr class="odd gradeX">
@@ -234,10 +241,14 @@ License: You must have a valid license purchased only from themeforest(the above
 									 4554354533445
 								</td>
 								<td>
+									কার্যকর
+								</td>
+								<td>
                                     <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 									<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
 									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
 									<a href="report.php" rel="tooltip" title="report" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অভিজুক্ত করুন </a>
+									<a href="status.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন  </a>
 								</td>
 							</tr>
 							<tr class="odd gradeX">
@@ -251,12 +262,16 @@ License: You must have a valid license purchased only from themeforest(the above
 								<td>
 									 4554354533443
 								</td>
+								<td>
+									কার্যকর
+								</td>
 
 								<td>
                                     <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 									<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
 									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
 									<a href="report.php" rel="tooltip" title="report" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অভিজুক্ত করুন </a>
+									<a href="status.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন  </a>
 								</td>
 							</tr>
 							<tr class="odd gradeX">
@@ -271,10 +286,14 @@ License: You must have a valid license purchased only from themeforest(the above
 									 4554354533445
 								</td>
 								<td>
+									কার্যকর
+								</td>
+								<td>
                                     <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 									<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
 									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
                                     <a href="report.php" rel="tooltip" title="report" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অভিজুক্ত করুন </a>
+									<a href="status.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন  </a>
 								</td>
 							</tr>
 							</tbody>

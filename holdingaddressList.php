@@ -218,13 +218,12 @@ License: You must have a valid license purchased only from themeforest(the above
 										4554354533445
 									</td>
 									<td>
-										সম্পন্ন
+										সম্পন্ন(8/0)
 									</td>
 									<td>
 										<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 										<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
 										<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
-										<a href="renterNew.php" class="btn purple-plum btn-xs" >ভাড়াটিয়া যোগ</a>
 										<a href="renterList.php" class="btn purple-plum btn-xs" >ভাড়াটিয়া তালিকা </a>
 										<a href="sms.php" class="btn purple-plum btn-xs" >সেন্ড এস এম এস </a>
 									</td>
@@ -241,13 +240,12 @@ License: You must have a valid license purchased only from themeforest(the above
 										4554354533445
 									</td>
 									<td>
-										সম্পন্ন
+										সম্পন্ন(8/0)
 									</td>
 									<td>
 										<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 										<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
 										<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
-										<a href="renterNew.php" class="btn purple-plum btn-xs" >ভাড়াটিয়া যোগ</a>
 										<a href="renterList.php" class="btn purple-plum btn-xs" >ভাড়াটিয়া তালিকা </a>
 										<a href="sms.php" class="btn purple-plum btn-xs" >সেন্ড এস এম এস </a>
 									</td>
@@ -264,14 +262,13 @@ License: You must have a valid license purchased only from themeforest(the above
 										4554354533443
 									</td>
 									<td>
-										সম্পন্ন
+										সম্পন্ন(8/2)
 									</td>
 
 									<td>
 										<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 										<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
 										<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
-										<a href="renterNew.php" class="btn purple-plum btn-xs" >ভাড়াটিয়া যোগ</a>
 										<a href="renterList.php" class="btn purple-plum btn-xs" >ভাড়াটিয়া তালিকা </a>
 										<a href="sms.php" class="btn purple-plum btn-xs" >সেন্ড এস এম এস </a>
 									</td>
@@ -288,13 +285,12 @@ License: You must have a valid license purchased only from themeforest(the above
 										4554354533445
 									</td>
 									<td>
-										সম্পন্ন
+										সম্পন্ন(4/2)
 									</td>
 									<td>
 										<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 										<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
 										<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
-										<a href="renterNew.php" class="btn purple-plum btn-xs" >ভাড়াটিয়া যোগ</a>
 										<a href="renterList.php" class="btn purple-plum btn-xs" >ভাড়াটিয়া তালিকা </a>
 										<a href="sms.php" class="btn purple-plum btn-xs" >সেন্ড এস এম এস </a>
 									</td>

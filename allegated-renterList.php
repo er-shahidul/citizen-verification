@@ -185,7 +185,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									জাতীয় পরিচয় পত্র
 								</th>
 								<th>
-									ফরওয়ার্ড
+									ফরওয়ার্ড স্টেটাস
 								</th>
 								<th>
 
