@@ -225,7 +225,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 									<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
 									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
-									<a href="report.php" rel="tooltip" title="allegation" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অভিজুক্ত করুন </a>
+									<a href="report.php" rel="tooltip" title="allegation" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
 									<a href="status.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন </a>
 								</td>
 							</tr>
@@ -247,7 +247,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 									<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
 									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
-									<a href="report.php" rel="tooltip" title="report" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অভিজুক্ত করুন </a>
+									<a href="report.php" rel="tooltip" title="report" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
 									<a href="status.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন  </a>
 								</td>
 							</tr>
@@ -270,7 +270,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 									<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
 									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
-									<a href="report.php" rel="tooltip" title="report" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অভিজুক্ত করুন </a>
+									<a href="report.php" rel="tooltip" title="report" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
 									<a href="status.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন  </a>
 								</td>
 							</tr>
@@ -292,7 +292,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 									<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
 									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
-                                    <a href="report.php" rel="tooltip" title="report" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অভিজুক্ত করুন </a>
+                                    <a href="report.php" rel="tooltip" title="report" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
 									<a href="status.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন  </a>
 								</td>
 							</tr>

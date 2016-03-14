@@ -75,11 +75,68 @@ License: You must have a valid license purchased only from themeforest(the above
                         <form action="citizenList.php" class="form-horizontal">
                             <div class="form-body">
                                 <div class="form-group">
-                                    <label class="col-md-3 control-label">ভাড়াটিয়া/বাড়িওলার নাম </label>
+                                    <label class="col-md-3 control-label">ভাড়াটিয়া  নাম </label>
                                     <div class="col-md-4">
                                         <input type="text" class="form-control " >
                                     </div>
                                 </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">ভাড়াটিয়া প্রকারভেদ </label>
+                                    <div class="col-md-4">
+                                        <select class="form-control" name="">
+                                            <option>বাংলাদেশী </option>
+                                            <option>বিদেশী </option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"> পেশা ও প্রতিষ্টান কর্মস্তলের ঠিকানা </label>
+                                    <div class="col-md-4">
+                                        <textarea type="text" class="form-control " ></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">পাসপোর্ট নাম্বার </label>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control " >
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">দেশ</label>
+                                    <div class="col-md-4">
+                                        <select class="form-control" name="">
+                                            <option>Bangladesh </option>
+                                            <option>India </option>
+                                            <option>Japan </option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">ভিসার মিয়াদ (সুধমাত্র বিদেশীদের ক্ষেত্রে )</label>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control " >
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">দেশে প্রবেশের বিবরণ (সুধমাত্র বিদেশীদের ক্ষেত্রে )</label>
+                                    <div class="col-md-4">
+                                        <textarea type="text" class="form-control " ></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">চাকুরী দাতার নাম ও ঠিকানা (সুধমাত্র বিদেশীদের ক্ষেত্রে )</label>
+                                    <div class="col-md-4">
+                                        <textarea type="text" class="form-control " ></textarea>
+                                    </div>
+                                </div>
+
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">পিতার নাম </label>
                                     <div class="col-md-4">
@@ -107,14 +164,6 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <textarea type="text" class="form-control " ></textarea>
                                     </div>
                                 </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label">পেশা ও প্রতিষ্টান কর্মস্তলের ঠিকানা</label>
-                                    <div class="col-md-4">
-                                        <input type="text" class="form-control " >
-                                    </div>
-                                </div>
-
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">ধর্ম</label>
                                     <div class="col-md-4">
@@ -147,12 +196,6 @@ License: You must have a valid license purchased only from themeforest(the above
                                     </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label">পাসপোর্ট নাম্বার </label>
-                                    <div class="col-md-4">
-                                        <input type="text" class="form-control " >
-                                    </div>
-                                </div>
                                     <div class="form-group">
                                         <label class="col-md-3 control-label">বিভাগ</label>
                                         <div class="col-md-4">

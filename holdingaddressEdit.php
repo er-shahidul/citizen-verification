@@ -69,7 +69,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
                     <!-- BEGIN EXAMPLE TABLE PORTLET-->
                     <div class="portlet light">
-                        <h2>নতুন হোল্ডিং এড্রেস যোগ করুন </h2>
+                        <h2>হোল্ডিং এড্রেস সম্পাদনা করুন</h2>
                         <hr>
                         <form action="citizenList.php" class="form-horizontal">
                             <div class="form-body">

@@ -71,12 +71,12 @@
                     </li>
                     <li class="menu-dropdown classic-menu-dropdown active">
                         <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;">
-                            অভিযুক্ত<i class="fa fa-angle-down"></i>
+                            যাচাই করণ <i class="fa fa-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu pull-left">
 
                             <li class="">
-                                <a href="allegated-renterList.php">অভিযুক্তদের তালিকা </a>
+                                <a href="allegated-renterList.php">যাচাই করণ তালিকা </a>
                             </li>
                         </ul>
                     </li>
