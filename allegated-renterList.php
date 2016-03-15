@@ -185,7 +185,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									জাতীয় পরিচয় পত্র
 								</th>
 								<th>
-									ফরওয়ার্ড স্টেটাস
+									 স্টেটাস
 								</th>
 								<th>
 
@@ -206,7 +206,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								</td>
 
 								<td>
-									হইসে
+									অভিযোগ আছে
 								</td>
 
 								<td>
@@ -215,6 +215,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
 									<a href="forward.php" class="btn purple-plum btn-xs" >ফরওয়ার্ড </a>
 									<a href="comments.php" class="btn purple-plum btn-xs" >মন্তব্য </a>
+									<a href="#" class="btn purple-plum btn-xs" >অবস্থা পরিবর্তন করুন </a>
 								</td>
 							</tr>
 							<tr class="odd gradeX">
@@ -229,13 +230,14 @@ License: You must have a valid license purchased only from themeforest(the above
 									 4554354533445
 								</td>
 								<td>
-									হইসে
+									অভিযোগ আছে
 								</td>
 								<td>
                                     <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
 									<a href="forward.php" class="btn purple-plum btn-xs" >ফরওয়ার্ড </a>
 									<a href="comments.php" class="btn purple-plum btn-xs" >মন্তব্য </a>
+									<a href="#" class="btn purple-plum btn-xs" >অবস্থা পরিবর্তন করুন </a>
 								</td>
 							</tr>
 							<tr class="odd gradeX">
@@ -250,7 +252,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									 4554354533443
 								</td>
 								<td>
-									হইসে
+									অভিযোগ আছে
 								</td>
 
 								<td>
@@ -258,6 +260,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
 									<a href="forward.php" class="btn purple-plum btn-xs" >ফরওয়ার্ড </a>
 									<a href="comments.php" class="btn purple-plum btn-xs" >মন্তব্য </a>
+									<a href="#" class="btn purple-plum btn-xs" >অবস্থা পরিবর্তন করুন </a>
 								</td>
 							</tr>
 							<tr class="odd gradeX">
@@ -272,13 +275,14 @@ License: You must have a valid license purchased only from themeforest(the above
 									 4554354533445
 								</td>
 								<td>
-									হইসে
+									অভিযোগ আছে
 								</td>
 								<td>
                                     <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
 									<a href="forward.php" class="btn purple-plum btn-xs" >ফরওয়ার্ড </a>
 									<a href="comments.php" class="btn purple-plum btn-xs" >মন্তব্য </a>
+									<a href="#" class="btn purple-plum btn-xs" >অবস্থা পরিবর্তন করুন </a>
 								</td>
 							</tr>
 							</tbody>

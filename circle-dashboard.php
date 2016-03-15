@@ -131,7 +131,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						<ul class="dropdown-menu pull-left">
 
 							<li class="">
-								<a href="#">অভিযুক্তদের তালিকা </a>
+								<a href="allegated-circle-renterList.php">অভিযুক্তদের তালিকা </a>
 							</li>
 						</ul>
 					</li>

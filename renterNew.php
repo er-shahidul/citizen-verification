@@ -84,11 +84,18 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">ভাড়াটিয়া প্রকারভেদ </label>
                                     <div class="col-md-4">
-                                        <select class="form-control" name="">
-                                            <option>বাংলাদেশী </option>
-                                            <option>বিদেশী </option>
+                                        <select class="form-control renterType" name="">
+                                            <option value="bd">বাংলাদেশী </option>
+                                            <option value="foreigner">বিদেশী </option>
                                         </select>
                                     </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">জাতীয় পরিচয় পত্র</label>
+                                    <div class="col-md-4">
+                                        <input id="nationalId" type="text" class="form-control " >
+                                    </div>
+                                    <span class="verify" style="cursor:pointer">ভেরিফাই </span>
                                 </div>
 
                                 <div class="form-group">
@@ -105,7 +112,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     </div>
                                 </div>
 
-                                <div class="form-group">
+                                <div class="form-group foreigner">
                                     <label class="col-md-3 control-label">দেশ</label>
                                     <div class="col-md-4">
                                         <select class="form-control" name="">
@@ -116,22 +123,22 @@ License: You must have a valid license purchased only from themeforest(the above
                                     </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label">ভিসার মিয়াদ (সুধমাত্র বিদেশীদের ক্ষেত্রে )</label>
+                                <div class="form-group foreigner">
+                                    <label class="col-md-3 control-label">ভিসার মিয়াদ</label>
                                     <div class="col-md-4">
                                         <input type="text" class="form-control " >
                                     </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label">দেশে প্রবেশের বিবরণ (সুধমাত্র বিদেশীদের ক্ষেত্রে )</label>
+                                <div class="form-group foreigner">
+                                    <label class="col-md-3 control-label">দেশে প্রবেশের বিবরণ </label>
                                     <div class="col-md-4">
                                         <textarea type="text" class="form-control " ></textarea>
                                     </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label">চাকুরী দাতার নাম ও ঠিকানা (সুধমাত্র বিদেশীদের ক্ষেত্রে )</label>
+                                <div class="form-group foreigner">
+                                    <label class="col-md-3 control-label">চাকুরী দাতার নাম ও ঠিকানা </label>
                                     <div class="col-md-4">
                                         <textarea type="text" class="form-control " ></textarea>
                                     </div>
@@ -196,7 +203,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     </div>
                                 </div>
 
-                                    <div class="form-group">
+                                    <div class="form-group localBd">
                                         <label class="col-md-3 control-label">বিভাগ</label>
                                         <div class="col-md-4">
                                             <select class="form-control" name="">
@@ -208,7 +215,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                         </div>
                                     </div>
 
-                                    <div class="form-group">
+                                    <div class="form-group localBd">
                                         <label class="col-md-3 control-label">জেলা</label>
                                         <div class="col-md-4">
                                             <select class="form-control" name="">
@@ -219,7 +226,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                         </div>
                                     </div>
 
-                                    <div class="form-group">
+                                    <div class="form-group localBd">
                                         <label class="col-md-3 control-label">থানা</label>
                                         <div class="col-md-4">
                                             <select class="form-control" name="">
@@ -230,7 +237,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                         </div>
                                     </div>
 
-                                    <div class="form-group">
+                                    <div class="form-group localBd">
                                     <label class="col-md-3 control-label">ওয়ার্ড  </label>
                                     <div class="col-md-4">
                                         <select class="form-control" name="">
@@ -495,9 +502,20 @@ License: You must have a valid license purchased only from themeforest(the above
         TableManaged.init();
 
         jQuery('.verify').on('click',function(){
-                console.log('asci');
                jQuery('#nationalId').toggleClass('spinner');
         })
+
+        jQuery(".renterType").on("change",function(){
+            var renterType= jQuery(this).val();
+            if(renterType == "bd"){
+                //jQuery(".localBd").show();
+                jQuery(".foreigner").hide();
+
+            }else{
+                //jQuery(".localBd").hide();
+                jQuery(".foreigner").show();
+            }
+        }).change();
 
     });
 </script>
