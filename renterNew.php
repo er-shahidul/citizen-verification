@@ -72,7 +72,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <div class="portlet light">
                         <h2>ভাড়াটিয়া যোগ করুন </h2>
                         <hr>
-                        <form action="citizenList.php" class="form-horizontal">
+                        <form  method="post" action="renterList.php?status=saved" class="form-horizontal">
                             <div class="form-body">
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">ভাড়াটিয়া  নাম </label>

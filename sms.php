@@ -10,6 +10,8 @@ use Guzzle\Http\Client;
 $client = new Client($url);
 // Create a request with basic Auth
 $request = $client->get("plain?user=rightbrain&password=NdmHQ15W&sender=Friend&SMSText=".$sms."&GSM=".$phoneNumber);
-$response = $request->send();
+//$response = $request->send();
 
-echo $response->getBody();
+//echo $response->getBody();
+
+header("Location: holdingaddressList.php");

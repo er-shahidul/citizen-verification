@@ -71,7 +71,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <div class="portlet light">
                         <h2>নতুন হোল্ডিং এড্রেস যোগ করুন </h2>
                         <hr>
-                        <form action="citizenList.php" class="form-horizontal">
+                        <form method="post" action="holdingaddressList.php?status=saved" class="form-horizontal">
                             <div class="form-body">
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">নাম </label>
@@ -82,21 +82,21 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">পিতার নাম </label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " >
+                                        <input type="text" class="form-control" >
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">জন্ম তারিখ</label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " >
+                                        <input type="text" class="form-control" >
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">বৈবাহিক অবস্থা</label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " >
+                                        <input type="text" class="form-control" >
                                     </div>
                                 </div>
 
@@ -370,7 +370,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             <div class="form-actions">
                                 <div class="row">
                                     <div class="col-md-offset-3 col-md-9">
-                                        <button type="submit" class="btn btn-circle blue">সাবমিট</button>
+                                        <button type="submit" name="status" value="saved" class="btn btn-circle blue">সাবমিট</button>
                                         <button type="button" class="btn btn-circle default">বাতিল</button>
                                     </div>
                                 </div>

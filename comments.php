@@ -63,7 +63,7 @@ License: You must have a valid license purchased only from themeforest(the above
                         <div class="col-md-12 blog-page">
                             <div class="row">
                                 <div class="col-md-9 article-block">
-                                    <h2>অভিযোগ</h2>
+                                    <h2>মন্তব্য </h2>
                                     <hr>
                                     <div class="media">
                                         <a href="javascript:;" class="pull-left">
@@ -134,7 +134,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <!--end media-->
                                     <hr>
                                     <div class="post-comment">
-                                        <h3>অভিযোগ করুন </h3>
+                                        <h3>মন্তব্য করুন </h3>
                                         <form role="form" action="javascript:;">
                                             <div class="form-group">
                                                 <label class="control-label">শিরোনাম  <span class="required">

@@ -63,25 +63,15 @@ License: You must have a valid license purchased only from themeforest(the above
 	<div class="page-content">
 		<div class="container">
 			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-			<div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-							<h4 class="modal-title">Modal title</h4>
-						</div>
-						<div class="modal-body">
-							 Widget settings form goes here
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn blue">Save changes</button>
-							<button type="button" class="btn default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-					<!-- /.modal-content -->
-				</div>
-				<!-- /.modal-dialog -->
-			</div>
+
+			<?php if($_GET['status'] == 'saved'):?>
+				<div id="prefix_16075061353" class="Metronic-alerts alert alert-success fade in"><button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>সফল ভাবে সংরক্ষিত হইসে</div>
+			<?php endif; ?>
+
+			<?php if($_GET['status'] == 'add-justify'):?>
+				<div id="prefix_16075061353" class="Metronic-alerts alert alert-success fade in"><button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>যাচাই করণ তালিকায় সফলভাবে যোগ হইসে</div>
+			<?php endif; ?>
+
 			<div class="row">
 				<div class="col-md-12">
 					<!-- BEGIN EXAMPLE TABLE PORTLET-->
@@ -225,7 +215,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 									<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
 									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
-									<a href="report.php" rel="tooltip" title="allegation" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
+									<a href="renterList.php?status=add-justify" rel="tooltip" title="allegation" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
 									<a href="status.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন </a>
 									<a href="#" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই কৃত ফলাফল </a>
 								</td>
@@ -248,7 +238,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 									<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
 									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
-									<a href="report.php" rel="tooltip" title="report" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
+									<a href="renterList.php?status=add-justify" rel="tooltip" title="report" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
 									<a href="status.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন  </a>
 									<a href="#" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই কৃত ফলাফল </a>
 								</td>
@@ -272,7 +262,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 									<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
 									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
-									<a href="report.php" rel="tooltip" title="report" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
+									<a href="renterList.php?status=add-justify" rel="tooltip" title="report" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
 									<a href="status.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন  </a>
 									<a href="#" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই কৃত ফলাফল </a>
 								</td>
@@ -295,7 +285,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 									<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
 									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
-                                    <a href="report.php" rel="tooltip" title="report" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
+                                    <a href="renterList.php?status=add-justify" rel="tooltip" title="report" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
 									<a href="status.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন  </a>
 									<a href="#" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই কৃত ফলাফল </a>
 								</td>
