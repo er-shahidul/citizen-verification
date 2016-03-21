@@ -1,25 +1,15 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: imran
- * Date: 3/14/16
- * Time: 12:38 PM
- */
+$sms = 'Dear Renter your username: imran, password: 1234 Please update your profile.';
+$phoneNumber = '8801912109075';
 
-require "vendor/twilio/sdk/Services/Twilio.php";
+$url = "http://api.bulksms.icombd.com/api/v3/sendsms";
+require_once 'vendor/autoload.php';
+use Guzzle\Http\Client;
 
-// set your AccountSid and AuthToken from www.twilio.com/user/account
-$AccountSid = "ACaeb4c346f6311ec9512786c66c2fe40b";
-$AuthToken = "470237ba933dec8e1c3be0f4223f1392";
+// Create a client and provide a base URL
+$client = new Client($url);
+// Create a request with basic Auth
+$request = $client->get("plain?user=rightbrain&password=NdmHQ15W&sender=Friend&SMSText=".$sms."&GSM=".$phoneNumber);
+$response = $request->send();
 
-$client = new Services_Twilio($AccountSid, $AuthToken);
-
-try {
-    $message = $client->account->messages->create(array(
-        "From" => "+15005550006",
-        "To" => "+8801912109075",
-        "Body" => "Test message!",
-    ));
-} catch (Services_Twilio_RestException $e) {
-    echo $e->getMessage();
-}
+echo $response->getBody();
