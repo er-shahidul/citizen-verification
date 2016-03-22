@@ -25,16 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="holdingaddressList.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/holdingaddressList.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="66" column="204" selection-start-line="66" selection-start-column="204" selection-end-line="66" selection-end-column="204" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="allegated-renterList.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/allegated-renterList.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -85,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="renterNew.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="renterNew.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/renterNew.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5721562">
-              <caret line="364" column="49" selection-start-line="364" selection-start-column="49" selection-end-line="364" selection-end-column="49" />
+            <state vertical-scroll-proportion="-7.814815">
+              <caret line="357" column="69" selection-start-line="357" selection-start-column="69" selection-end-line="357" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -110,6 +100,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-8.666667">
               <caret line="84" column="38" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comments.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/comments.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.58064514">
+              <caret line="145" column="87" selection-start-line="145" selection-start-column="87" selection-end-line="145" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -158,7 +158,6 @@
         <option value="$PROJECT_DIR$/sms.php" />
         <option value="$PROJECT_DIR$/justify.php" />
         <option value="$PROJECT_DIR$/PhpMailer.php" />
-        <option value="$PROJECT_DIR$/comments.php" />
         <option value="$PROJECT_DIR$/forward.php" />
         <option value="$PROJECT_DIR$/holdingaddressNew.php" />
         <option value="$PROJECT_DIR$/holdingaddressList.php" />
@@ -169,6 +168,7 @@
         <option value="$PROJECT_DIR$/usernew.php" />
         <option value="$PROJECT_DIR$/userList.php" />
         <option value="$PROJECT_DIR$/renterNew.php" />
+        <option value="$PROJECT_DIR$/comments.php" />
       </list>
     </option>
   </component>
@@ -634,14 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PhpMailer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -748,8 +740,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/renterNew.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5721562">
-          <caret line="364" column="49" selection-start-line="364" selection-start-column="49" selection-end-line="364" selection-end-column="49" />
+        <state vertical-scroll-proportion="-7.814815">
+          <caret line="357" column="69" selection-start-line="357" selection-start-column="69" selection-end-line="357" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58064514">
+          <caret line="145" column="87" selection-start-line="145" selection-start-column="87" selection-end-line="145" selection-end-column="87" />
           <folding />
         </state>
       </provider>

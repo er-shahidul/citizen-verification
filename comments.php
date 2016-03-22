@@ -143,7 +143,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 <input type="text" class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label">অভিযোগ <span class="required">
+                                                <label class="control-label">বিস্তারিত  <span class="required">
 												* </span>
                                                 </label>
                                                 <textarea class="col-md-10 form-control" rows="8"></textarea>
