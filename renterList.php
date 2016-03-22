@@ -197,7 +197,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							</thead>
 							<tbody>
 							<tr class="odd gradeX">
-                                <td>1</td>
+                                <td>১</td>
 								<td>
 									আল-আমিন হোসাইন
 								</td>
@@ -217,11 +217,11 @@ License: You must have a valid license purchased only from themeforest(the above
 									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
 									<a href="renterList.php?status=add-justify" rel="tooltip" title="allegation" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
 									<a href="status.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন </a>
-									<a href="#" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই কৃত ফলাফল </a>
+									<a href="justifiedResults.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই কৃত ফলাফল </a>
 								</td>
 							</tr>
 							<tr class="odd gradeX">
-                                <td>2</td>
+                                <td>২</td>
 								<td>
 									তাসকিন আহমেদ
 								</td>
@@ -240,11 +240,11 @@ License: You must have a valid license purchased only from themeforest(the above
 									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
 									<a href="renterList.php?status=add-justify" rel="tooltip" title="report" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
 									<a href="status.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন  </a>
-									<a href="#" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই কৃত ফলাফল </a>
+									<a href="justifiedResults.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই কৃত ফলাফল </a>
 								</td>
 							</tr>
 							<tr class="odd gradeX">
-                                <td>3</td>
+                                <td>৩</td>
 								<td>
 									মুস্তাফিজুর রহমান
 								</td>
@@ -264,11 +264,11 @@ License: You must have a valid license purchased only from themeforest(the above
 									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
 									<a href="renterList.php?status=add-justify" rel="tooltip" title="report" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
 									<a href="status.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন  </a>
-									<a href="#" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই কৃত ফলাফল </a>
+									<a href="justifiedResults.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই কৃত ফলাফল </a>
 								</td>
 							</tr>
 							<tr class="odd gradeX">
-                                <td>4</td>
+                                <td>৪</td>
 								<td>
 									মাসরাফাফি
 								</td>
@@ -287,7 +287,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
                                     <a href="renterList.php?status=add-justify" rel="tooltip" title="report" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
 									<a href="status.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন  </a>
-									<a href="#" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই কৃত ফলাফল </a>
+									<a href="justifiedResults.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই কৃত ফলাফল </a>
 								</td>
 							</tr>
 							</tbody>

@@ -44,11 +44,6 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
 
-    <style>
-        .checker{
-            display: none;
-        }
-    </style>
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -178,7 +173,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							</thead>
 							<tbody>
 							<tr class="odd gradeX">
-                                <td>1</td>
+                                <td>১</td>
 								<td>
 									আল-আমিন হোসাইন
 								</td>
@@ -203,7 +198,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								</td>
 							</tr>
 							<tr class="odd gradeX">
-                                <td>2</td>
+                                <td>২</td>
 								<td>
 									তাসকিন আহমেদ
 								</td>
@@ -225,7 +220,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								</td>
 							</tr>
 							<tr class="odd gradeX">
-                                <td>3</td>
+                                <td>৩</td>
 								<td>
 									মুস্তাফিজুর রহমান
 								</td>
@@ -248,7 +243,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								</td>
 							</tr>
 							<tr class="odd gradeX">
-                                <td>4</td>
+                                <td>৪</td>
 								<td>
 									মাসরাফাফি
 								</td>
