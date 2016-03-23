@@ -1,10 +1,9 @@
 <?php
 require_once "conn.php";
 
-$sqlSelect = "SELECT * from houseHold WHERE id=".$_GET['id'];
+$sqlSelect = "SELECT * from renter WHERE id=".$_GET['id'];
 $records = $conn->query($sqlSelect);
 $result = $records->fetch_assoc();
-$data = json_decode($result['data']);
 $conn->close();
 ?>
 
@@ -76,30 +75,21 @@ License: You must have a valid license purchased only from themeforest(the above
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+
                     <!-- BEGIN EXAMPLE TABLE PORTLET-->
                     <div class="portlet light">
-
-                        <h2>হোল্ডিং এড্রেস </h2>
+                        <h2>ভাড়াটিয়া</h2>
                         <hr>
                         <div class="portlet-body">
-                            <div  style="position: absolute; top:100px; left: 700px;">
-                                <div class="fileinput-new thumbnail">
-                                    <img src="http://www.placehold.it/300x250/EFEFEF/AAAAAA&amp;text=no+image" alt=""/>
-                                </div>
-                                <div style="margin-bottom: 20px;">
-                                    <a href="holdingaddressNew.php">
-                                        <button id="sample_editable_1_new" class="btn green">
-                                            ভাড়াটিয়া যোগ করুন  <i class="fa fa-plus"></i>
-                                        </button>
-                                    </a>
-                                </div>
+                            <div class="fileinput-new thumbnail" style="position: absolute; top:100px; left: 700px;">
+                                <img src="http://www.placehold.it/300x250/EFEFEF/AAAAAA&amp;text=no+image" alt=""/>
                             </div>
                             <div class="row static-info">
                                 <div class="col-md-5 name">
-                                    নাম:
+                                    ভাড়াটিয়া/বাড়িওলার নাম:
                                 </div>
                                 <div class="col-md-7 value">
-                                   <?php echo $result['name']?>
+                                    <?php echo $result['name'];?>
                                 </div>
                             </div>
                             <div class="row static-info">
@@ -115,7 +105,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     বৈবাহিক অবস্থা:
                                 </div>
                                 <div class="col-md-7 value">
-                                    <?php echo $result['mariatalStatus'];?>
+                                    <?php echo $result['maritalStatus'];?>
                                 </div>
                             </div>
                             <div class="row static-info">
@@ -123,7 +113,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     স্থায়ী ঠিকানা :
                                 </div>
                                 <div class="col-md-7 value">
-                                    <?php echo $result['paddress'];?>
+                                    <?php echo $result['pAddress'];?>
                                 </div>
                             </div>
                             <div class="row static-info">
@@ -139,15 +129,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     ধর্ম:
                                 </div>
                                 <div class="col-md-7 value">
-                                    <?php echo $result['religeon'];?>
-                                </div>
-                            </div>
-                            <div class="row static-info">
-                                <div class="col-md-5 name">
-                                    বাড়ির ধরন:
-                                </div>
-                                <div class="col-md-7 value">
-                                    <?php echo $result['houseType'];?>
+                                    <?php echo $result['religion'];?>
                                 </div>
                             </div>
                             <div class="row static-info">
@@ -155,7 +137,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     মোবাইল নাম্বার:
                                 </div>
                                 <div class="col-md-7 value">
-                                    <?php echo $result['mobileNumber'];?>
+                                    <?php echo $result['mobileNo'];?>
                                 </div>
                             </div>
                             <div class="row static-info">
@@ -163,7 +145,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     ইমেইল আইডি:
                                 </div>
                                 <div class="col-md-7 value">
-                                    <?php echo $result['Email'];?>
+                                    <?php echo $result['email'];?>
                                 </div>
                             </div>
 
@@ -172,37 +154,36 @@ License: You must have a valid license purchased only from themeforest(the above
                                     পাসপোর্ট নাম্বার:
                                 </div>
                                 <div class="col-md-7 value">
-                                    <?php echo $result['passportNumber'];?>
-
+                                    <?php echo $result['passport'];?>
                                 </div>
                             </div>
 
                             <fieldset style="margin-bottom: 20px;">
                                 <legend>জরুরি যোগাযোগ</legend>
-                                <div class="row static-info">
-                                    <div class="col-md-5 name">
-                                        নাম:
+                                    <div class="row static-info">
+                                        <div class="col-md-5 name">
+                                            নাম:
+                                        </div>
+                                        <div class="col-md-7 value">
+                                            <?php echo $result['emergencyName'];?>
+                                        </div>
                                     </div>
-                                    <div class="col-md-7 value">
-                                        <?php echo $result['emergencyName'];?>
+                                    <div class="row static-info">
+                                        <div class="col-md-5 name">
+                                            ঠিকানা:
+                                        </div>
+                                        <div class="col-md-7 value">
+                                            <?php echo $result['emergencyAddress'];?>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row static-info">
-                                    <div class="col-md-5 name">
-                                        ঠিকানা:
+                                    <div class="row static-info">
+                                        <div class="col-md-5 name">
+                                            সম্পর্ক:
+                                        </div>
+                                        <div class="col-md-7 value">
+                                            <?php echo $result['emergencyRelation'];?>
+                                        </div>
                                     </div>
-                                    <div class="col-md-7 value">
-                                        <?php echo $result['emergencyAddress'];?>
-                                    </div>
-                                </div>
-                                <div class="row static-info">
-                                    <div class="col-md-5 name">
-                                        সম্পর্ক:
-                                    </div>
-                                    <div class="col-md-7 value">
-                                        <?php echo $result['emergencyRelation'];?>
-                                    </div>
-                                </div>
                             </fieldset>
                             <fieldset style="margin-bottom: 20px;">
                                 <legend>ড্রাইভার</legend>
@@ -227,7 +208,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                         মোবাইল নাম্বার:
                                     </div>
                                     <div class="col-md-7 value">
-                                        <?php echo $result['diriverMobileNo'];?>
+                                        <?php echo $result['driverMobile'];?>
                                     </div>
                                 </div>
                                 <div class="row static-info">
@@ -235,27 +216,18 @@ License: You must have a valid license purchased only from themeforest(the above
                                         স্থায়ী ঠিকানা:
                                     </div>
                                     <div class="col-md-7 value">
-                                        <?php echo $result['driverParmanentAddress'];?>
+                                        <?php echo $result['driverPaddress'];?>
                                     </div>
                                 </div>
                             </fieldset>
-
                             <fieldset style="margin-bottom: 20px;">
-                                <legend>নিরাপত্তা প্রহরী</legend>
+                                <legend>পূরবর্তী বাড়িওয়ালা</legend>
                                 <div class="row static-info">
                                     <div class="col-md-5 name">
                                         নাম:
                                     </div>
                                     <div class="col-md-7 value">
-                                        <?php echo $result['guardName'];?>
-                                    </div>
-                                </div>
-                                <div class="row static-info">
-                                    <div class="col-md-5 name">
-                                        জাতীয় পরিচয় পত্র:
-                                    </div>
-                                    <div class="col-md-7 value">
-                                        <?php echo $result['guardNid'];?>
+                                        <?php echo $result['previousHouseHolder'];?>
                                     </div>
                                 </div>
                                 <div class="row static-info">
@@ -263,7 +235,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                         মোবাইল নাম্বার:
                                     </div>
                                     <div class="col-md-7 value">
-                                        <?php echo $result['guardMobileNo'];?>
+                                        <?php echo $result['previousHouseHolderMobileNo'];?>
                                     </div>
                                 </div>
                                 <div class="row static-info">
@@ -271,28 +243,48 @@ License: You must have a valid license purchased only from themeforest(the above
                                         স্থায়ী ঠিকানা:
                                     </div>
                                     <div class="col-md-7 value">
-                                        <?php echo $result['guardPermanentAddress'];?>
+                                        <?php echo $result['PreviouspAddress'];?>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset style="margin-bottom: 20px;">
+                                <legend>বর্তমান বাড়িওয়ালা</legend>
+                                <div class="row static-info">
+                                    <div class="col-md-5 name">
+                                        নাম:
+                                    </div>
+                                    <div class="col-md-7 value">
+                                        <?php echo $result['currHouseHolderName'];?>
+                                    </div>
+                                </div>
+                                <div class="row static-info">
+                                    <div class="col-md-5 name">
+                                        মোবাইল নাম্বার:
+                                    </div>
+                                    <div class="col-md-7 value">
+                                        <?php echo $result['currHouseHolderMobileNo'];?>
+                                    </div>
+                                </div>
+                                <div class="row static-info">
+                                    <div class="col-md-5 name">
+                                        স্থায়ী ঠিকানা:
+                                    </div>
+                                    <div class="col-md-7 value">
+                                        <?php echo $result['currHouseHolderPaddress'];?>
                                     </div>
                                 </div>
                             </fieldset>
 
-                            <div class="portlet-title">
-                                <div class="tools">
-                                    <a href="javascript:;" class="collapse">
-                                    </a>
-                                    <a href="#portlet-config" data-toggle="modal" class="config">
-                                    </a>
-                                    <a href="javascript:;" class="reload">
-                                    </a>
-                                    <a href="javascript:;" class="remove">
-                                    </a>
+                            <div class="row static-info">
+                                <div class="col-md-5 name">
+                                    বর্তমান বাড়িতে কোন তারিখ থেকে বসবাস :
                                 </div>
-                            </div>
-                            <div class="portlet-body">
-                                <div id="gmap_marker" class="gmaps">
+                                <div class="col-md-7 value">
+                                    <?php echo $result['startDateOfCurrLiving'];?>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -327,24 +319,25 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
 <!-- END CORE PLUGINS -->
 <!-- BEGIN PAGE LEVEL PLUGINS -->
-<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
-<script src="assets/global/plugins/gmaps/gmaps.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/global/plugins/select2/select2.min.js"></script>
+<script type="text/javascript" src="assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+<script type="text/javascript" src="assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js"></script>
+
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 <script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
 <script src="assets/admin/layout3/scripts/layout.js" type="text/javascript"></script>
 <script src="assets/admin/layout3/scripts/demo.js" type="text/javascript"></script>
-<script src="assets/admin/pages/scripts/maps-google.js" type="text/javascript"></script>
-<!-- END PAGE LEVEL SCRIPTS -->
+<script src="assets/admin/pages/scripts/table-managed.js"></script>
 <script>
     jQuery(document).ready(function() {
         Metronic.init(); // init metronic core components
         Layout.init(); // init current layout
         Demo.init(); // init demo features
-        MapsGoogle.init();
+        TableManaged.init();
     });
 </script>
-<!-- END JAVASCRIPTS -->
 </body>
 <!-- END BODY -->
 </html>

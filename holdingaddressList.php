@@ -1,3 +1,73 @@
+<?php
+require_once "conn.php";
+if($_POST){
+	$strname = $_POST['name'];
+	$strfatherName = $_POST['fatherName'];
+	$strnid = $_POST['nid'];
+	$strbrd = $_POST['brd'];
+	$strmariatalStatus = $_POST['mariatalStatus'];
+	$strpaddress = $_POST['paddress'];
+	$strworkaddress = $_POST['workaddress'];
+	$strhouseType = $_POST['houseType'];
+	$strrenterNumber = $_POST['renterNumber'];
+	$strreligeon = $_POST['religeon'];
+	$streduqualification = $_POST['eduqualification'];
+	$strmobileNumber = $_POST['mobileNumber'];
+	$strEmail = $_POST['Email'];
+	$strpassportNumber = $_POST['passportNumber'];
+	$strdivision = $_POST['division'];
+	$strdistrict = $_POST['district'];
+	$strthana = $_POST['thana'];
+	$strword = $_POST['word'];
+	$stremergencyName = $_POST['emergencyName'];
+	$stremergencyAddress = $_POST['emergencyAddress'];
+	$stremergencyRelation = $_POST['emergencyRelation'];
+	$strservantName = $_POST['servantName'];
+	$strservantNid = $_POST['servantNid'];
+	$strservantMobileNo = $_POST['servantMobileNo'];
+	$strservantParmanentAddress = $_POST['servantParmanentAddress'];
+	$strdriverName = $_POST['driverName'];
+	$strdriverNid = $_POST['driverNid'];
+	$strdiriverMobileNo = $_POST['diriverMobileNo'];
+	$strdriverParmanentAddress = $_POST['driverParmanentAddress'];
+	$strguardName = $_POST['guardName'];
+	$strguardNid = $_POST['guardNid'];
+	$strguardMobileNo = $_POST['guardMobileNo'];
+	$strguardPermanentAddress = $_POST['guardPermanentAddress'];
+
+
+	  $data = json_encode($_POST,JSON_UNESCAPED_UNICODE);
+	  $sql = "INSERT INTO houseHold (name,fatherName,nid,brd,mariatalStatus,paddress,workaddress,houseType,renterNumber,religeon,eduqualification,mobileNumber,Email,passportNumber,division,district,thana,word,emergencyName,emergencyAddress,emergencyRelation,servantName,servantNid,servantMobileNo,servantParmanentAddress,driverName,driverNid,diriverMobileNo,driverParmanentAddress,guardName,guardNid,guardMobileNo,guardPermanentAddress)
+		VALUES
+		('$strname','$strfatherName','$strnid','$strbrd','$strmariatalStatus','$strpaddress','$strworkaddress','$strhouseType','$strrenterNumber',
+		'$strreligeon','$streduqualification','$strmobileNumber','$strEmail','$strpassportNumber',
+		'$strdivision','$strdistrict','$strthana','$strword','$stremergencyName','$stremergencyAddress',
+		'$stremergencyRelation','$strservantName','$strservantNid','$strservantMobileNo','$strservantParmanentAddress',
+		'$strdriverName','$strdriverNid','$strdiriverMobileNo','$strdriverParmanentAddress','$strguardName',
+		'$strguardNid','$strguardMobileNo','$strguardPermanentAddress')";
+
+	if ($conn->query($sql) === TRUE) {
+	} else {
+		echo "Error: " . $sql . "<br>" . $conn->error;
+	}
+
+
+}
+
+$sqlSelect = "SELECT * from houseHold";
+$result = $conn->query($sqlSelect);
+
+
+if($_GET['status'] == 'delete'){
+	$sqlDelete = "Delete from houseHold WHERE id=".$_GET['id'];
+	$conn->query($sqlDelete);
+}
+
+$conn->close();
+
+?>
+
+
 <!DOCTYPE html>
 <!-- 
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.1
@@ -65,6 +135,10 @@ License: You must have a valid license purchased only from themeforest(the above
 			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
 			<?php if($_GET['status'] == 'saved'):?>
 				<div id="prefix_16075061353" class="Metronic-alerts alert alert-success fade in"><button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>সফল ভাবে সংরক্ষিত হইসে</div>
+			<?php endif; ?>
+
+			<?php if($_GET['status'] == 'delete'):?>
+				<div id="prefix_16075061353" class="Metronic-alerts alert alert-success fade in"><button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>সফল ভাবে মুছে ফেলা হইসে</div>
 			<?php endif; ?>
 			<div class="row">
 				<div class="col-md-12">
@@ -190,95 +264,34 @@ License: You must have a valid license purchased only from themeforest(the above
 								</tr>
 								</thead>
 								<tbody>
-									<tr class="odd gradeX">
-										<td><input name="householders"  type="checkbox"> </td>
-										<td>
-											আল-আমিন হোসাইন
-										</td>
-										<td>
-											+880-01912-109434
-										</td>
-										<td>
-											4554354533445
-										</td>
-										<td>
-											সম্পন্ন(8/0)
-										</td>
-										<td>
-											<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
-											<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
-											<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
-											<a href="renterList.php" class="btn purple-plum btn-xs" >ভাড়াটিয়া তালিকা </a>
-											<a href="sms.php" class="btn purple-plum btn-xs" >সেন্ড এস এম এস </a>
-										</td>
-									</tr>
-									<tr class="odd gradeX">
-										<td><input name="householders"  type="checkbox"> </td>
-										<td>
-											তাসকিন আহমেদ
-										</td>
-										<td>
-											+880-01912-109434
-										</td>
-										<td>
-											4554354533445
-										</td>
-										<td>
-											সম্পন্ন(8/0)
-										</td>
-										<td>
-											<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
-											<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
-											<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
-											<a href="renterList.php" class="btn purple-plum btn-xs" >ভাড়াটিয়া তালিকা </a>
-											<a href="sms.php" class="btn purple-plum btn-xs" >সেন্ড এস এম এস </a>
-										</td>
-									</tr>
-									<tr class="odd gradeX">
-										<td><input name="householders"  type="checkbox"></td>
-										<td>
-											মুস্তাফিজুর রহমান
-										</td>
-										<td>
-											+880-01912-109435
-										</td>
-										<td>
-											4554354533443
-										</td>
-										<td>
-											সম্পন্ন(8/2)
-										</td>
+								<?php if ($result->num_rows > 0):
+									while($row = $result->fetch_assoc()):
+										$arrData = json_decode($row['data']);
+								?>
 
-										<td>
-											<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
-											<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
-											<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
-											<a href="renterList.php" class="btn purple-plum btn-xs" >ভাড়াটিয়া তালিকা </a>
-											<a href="sms.php" class="btn purple-plum btn-xs" >সেন্ড এস এম এস </a>
-										</td>
-									</tr>
 									<tr class="odd gradeX">
-										<td><input name="householders" type="checkbox"> </td>
+										<td><input name="householders"  type="checkbox"> </td>
 										<td>
-											মাসরাফাফি
+											<?php echo $row['name']; ?>
 										</td>
 										<td>
-											+880-01912-109434
+											<?php echo $row['mobileNumber']; ?>
 										</td>
 										<td>
-											4554354533445
+											<?php echo $row['nid']; ?>
 										</td>
 										<td>
-											সম্পন্ন(4/2)
+											সম্পন্ন(8/0)
 										</td>
 										<td>
-											<a href="holdingaddressView.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+											<a href="<?php echo 'holdingaddressView.php?id='.$row['id'];?>" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 											<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
-											<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
+											<a href= "<?php echo 'holdingaddressList.php?status=delete&id='.$row['id']?>" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
 											<a href="renterList.php" class="btn purple-plum btn-xs" >ভাড়াটিয়া তালিকা </a>
 											<a href="sms.php" class="btn purple-plum btn-xs" >সেন্ড এস এম এস </a>
 										</td>
 									</tr>
+								<?php endwhile; endif;  ?>
 									<tr class="odd gradeX">
 										<td colspan="6"><button type="submit">সেন্ড এস এম এস </button></td>
 									</tr>

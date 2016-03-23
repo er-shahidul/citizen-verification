@@ -1,3 +1,75 @@
+<?php
+require_once "conn.php";
+
+if($_POST) {
+	$strname = $_POST['name'];
+	$strrenterType = $_POST['renterType'];
+	$strnid = $_POST['nid'];
+	$strworkaddress = $_POST['workaddress'];
+	$strpassport = $_POST['passport'];
+	$strcontry = $_POST['contry'];
+	$strvisaLifeTime = $_POST['visaLifeTime'];
+	$strreasonOfEnter = $_POST['reasonOfEnter'];
+	$stremployerNameAddress = $_POST['employerNameAddress'];
+	$strfatherName = $_POST['fatherName'];
+	$strdob = $_POST['dob'];
+	$strmaritalStatus = $_POST['maritalStatus'];
+	$strpAddress = $_POST['pAddress'];
+	$strreligion = $_POST['religion'];
+	$streducation = $_POST['education'];
+	$strmobileNo = $_POST['mobileNo'];
+	$stremail = $_POST['email'];
+	$strdivision = $_POST['division'];
+	$strdistrict = $_POST['district'];
+	$strthana = $_POST['thana'];
+	$strword = $_POST['word'];
+	$stremergencyName = $_POST['emergencyName'];
+	$stremergencyAddress = $_POST['emergencyAddress'];
+	$stremergencyRelation = $_POST['emergencyRelation'];
+	$strservantName = $_POST['servantName'];
+	$strservantNid = $_POST['servantNid'];
+	$strservantMobile = $_POST['servantMobile'];
+	$strServantpaddress = $_POST['Servantpaddress'];
+	$strdriverName = $_POST['driverName'];
+	$strdriverNid = $_POST['driverNid'];
+	$strdriverMobile = $_POST['driverMobile'];
+	$strdriverPaddress = $_POST['driverPaddress'];
+	$strpreviousHouseHolder = $_POST['previousHouseHolder'];
+	$strpreviousHouseHolderMobileNo = $_POST['previousHouseHolderMobileNo'];
+	$strPreviouspAddress = $_POST['PreviouspAddress'];
+	$strreasonOFpreviousHouseLeft = $_POST['reasonOFpreviousHouseLeft'];
+	$strcurrHouseHolderName = $_POST['currHouseHolderName'];
+	$strcurrHouseHolderMobileNo = $_POST['currHouseHolderMobileNo'];
+	$strcurrHouseHolderPaddress = $_POST['currHouseHolderPaddress'];
+	$strstartDateOfCurrLiving = $_POST['startDateOfCurrLiving'];
+
+	$sql = "INSERT INTO renter (name,renterType,nid,workaddress,passport,contry,visaLifeTime,reasonOfEnter,employerNameAddress,fatherName,dob,maritalStatus,pAddress,religion,education,mobileNo,email,division,district,thana,word,emergencyName,emergencyAddress,emergencyRelation,servantName,servantNid,servantMobile,Servantpaddress,driverName,driverNid,driverMobile,driverPaddress,previousHouseHolder,previousHouseHolderMobileNo,PreviouspAddress,reasonOFpreviousHouseLeft,currHouseHolderName,currHouseHolderMobileNo,currHouseHolderPaddress,startDateOfCurrLiving)
+		VALUES
+		('$strname','$strrenterType','$strnid','$strworkaddress','$strpassport','$strcontry','$strvisaLifeTime',
+		 '$strreasonOfEnter','$stremployerNameAddress','$strfatherName','$strdob','$strmaritalStatus','$strpAddress','$strreligion','$streducation','$strmobileNo','$stremail','$strdivision','$strdistrict','$strthana','$strword','$stremergencyName',
+		 '$stremergencyAddress','$stremergencyRelation',
+		 '$strservantName','$strservantNid','$strservantMobile','$strServantpaddress','$strdriverName','$strdriverNid','$strdriverMobile','$strdriverPaddress','$strpreviousHouseHolder','$strpreviousHouseHolderMobileNo','$strPreviouspAddress','$strreasonOFpreviousHouseLeft','$strcurrHouseHolderName',
+		 '$strcurrHouseHolderMobileNo','$strcurrHouseHolderPaddress',
+		 '$strstartDateOfCurrLiving')";
+
+	if ($conn->query($sql) === TRUE) {
+	} else {
+		echo "Error: " . $sql . "<br>" . $conn->error;
+	}
+}
+
+$sqlSelect = "SELECT * from renter";
+$result = $conn->query($sqlSelect);
+
+
+if($_GET['status'] == 'delete'){
+	$sqlDelete = "Delete from renter WHERE id=".$_GET['id'];
+	$conn->query($sqlDelete);
+}
+
+$conn->close();
+?>
+
 <!DOCTYPE html>
 <!-- 
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.1
@@ -196,100 +268,35 @@ License: You must have a valid license purchased only from themeforest(the above
 							</tr>
 							</thead>
 							<tbody>
+							<?php if ($result->num_rows > 0):
+							while($row = $result->fetch_assoc()):?>
+
 							<tr class="odd gradeX">
-                                <td>১</td>
+                                <td><?php  $id = $row['id']; echo $id; ?></td>
 								<td>
-									আল-আমিন হোসাইন
+									<?php echo $row['name'] ?>
 								</td>
 								<td>
-									+880-01912-109434
+									<?php echo $row['mobileNo'] ?>
 								</td>
 								<td>
-									 4554354533445
+									<?php echo $row['nid'] ?>
 								</td>
 								<td>
-									কার্যকর
+									<?php echo isset($row['status'])? $row['status']:"Active"; ?>
 								</td>
 								<td>
 
-                                    <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+                                    <a href="<?php echo "renterview.php?id=$id";?>" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 									<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
-									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
+									<a href="<?php echo "renterList.php?id=$id&status=delete";?>" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
 									<a href="renterList.php?status=add-justify" rel="tooltip" title="allegation" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
-									<a href="status.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন </a>
+									<a href="status.php?id=$id" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন </a>
 									<a href="justifiedResults.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই কৃত ফলাফল </a>
 								</td>
 							</tr>
-							<tr class="odd gradeX">
-                                <td>২</td>
-								<td>
-									তাসকিন আহমেদ
-								</td>
-								<td>
-									+880-01912-109434
-								</td>
-								<td>
-									 4554354533445
-								</td>
-								<td>
-									কার্যকর
-								</td>
-								<td>
-                                    <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
-									<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
-									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
-									<a href="renterList.php?status=add-justify" rel="tooltip" title="report" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
-									<a href="status.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন  </a>
-									<a href="justifiedResults.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই কৃত ফলাফল </a>
-								</td>
-							</tr>
-							<tr class="odd gradeX">
-                                <td>৩</td>
-								<td>
-									মুস্তাফিজুর রহমান
-								</td>
-								<td>
-									+880-01912-109435
-								</td>
-								<td>
-									 4554354533443
-								</td>
-								<td>
-									কার্যকর
-								</td>
 
-								<td>
-                                    <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
-									<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
-									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
-									<a href="renterList.php?status=add-justify" rel="tooltip" title="report" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
-									<a href="status.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন  </a>
-									<a href="justifiedResults.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই কৃত ফলাফল </a>
-								</td>
-							</tr>
-							<tr class="odd gradeX">
-                                <td>৪</td>
-								<td>
-									মাসরাফাফি
-								</td>
-								<td>
-									+880-01912-109434
-								</td>
-								<td>
-									 4554354533445
-								</td>
-								<td>
-									কার্যকর
-								</td>
-								<td>
-                                    <a href="citizenview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
-									<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
-									<a href="delete.php" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
-                                    <a href="renterList.php?status=add-justify" rel="tooltip" title="report" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
-									<a href="status.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন  </a>
-									<a href="justifiedResults.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই কৃত ফলাফল </a>
-								</td>
-							</tr>
+							<?php endwhile; endif;  ?>
 							</tbody>
 							</table>
 						</div>

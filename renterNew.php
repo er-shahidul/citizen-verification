@@ -77,14 +77,14 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">ভাড়াটিয়া  নাম </label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " >
+                                        <input type="text" name="name" class="form-control " >
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">ভাড়াটিয়া প্রকারভেদ </label>
                                     <div class="col-md-4">
-                                        <select class="form-control renterType" name="">
+                                        <select class="form-control renterType" name="renterType">
                                             <option value="bd">বাংলাদেশী </option>
                                             <option value="foreigner">বিদেশী </option>
                                         </select>
@@ -93,7 +93,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">জাতীয় পরিচয় পত্র</label>
                                     <div class="col-md-4">
-                                        <input id="nationalId" type="text" class="form-control " >
+                                        <input id="nationalId" type="text" name="nid" class="form-control " >
                                     </div>
                                     <span class="verify" style="cursor:pointer">ভেরিফাই </span>
                                 </div>
@@ -101,14 +101,14 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="form-group">
                                     <label class="col-md-3 control-label"> পেশা ও প্রতিষ্টান কর্মস্তলের ঠিকানা </label>
                                     <div class="col-md-4">
-                                        <textarea type="text" class="form-control " ></textarea>
+                                        <textarea type="text" name="workaddress" class="form-control " ></textarea>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">পাসপোর্ট নাম্বার </label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " >
+                                        <input type="text" name="passport" class="form-control " >
                                     </div>
                                 </div>
 
@@ -369,55 +369,55 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="form-group foreigner">
                                     <label class="col-md-3 control-label">ভিসার মিয়াদ</label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " >
+                                        <input type="text" class="form-control " name="visaLifeTime">
                                     </div>
                                 </div>
 
                                 <div class="form-group foreigner">
                                     <label class="col-md-3 control-label">দেশে প্রবেশের বিবরণ </label>
                                     <div class="col-md-4">
-                                        <textarea type="text" class="form-control " ></textarea>
+                                        <textarea type="text" class="form-control " name="reasonOfEnter" ></textarea>
                                     </div>
                                 </div>
 
                                 <div class="form-group foreigner">
                                     <label class="col-md-3 control-label">চাকুরী দাতার নাম ও ঠিকানা </label>
                                     <div class="col-md-4">
-                                        <textarea type="text" class="form-control " ></textarea>
+                                        <textarea type="text" class="form-control " name="employerNameAddress" ></textarea>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">পিতার নাম </label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " >
+                                        <input type="text" class="form-control " name="fatherName">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-md-3 control-label">জন্ম তারিখ</label>
+                                    <label class="col-md-3 control-label" >জন্ম তারিখ</label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " >
+                                        <input type="text" class="form-control " name="dob">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">বৈবাহিক অবস্থা</label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " >
+                                        <input type="text" class="form-control " name="maritalStatus" >
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">স্থায়ী ঠিকানা </label>
                                     <div class="col-md-4">
-                                        <textarea type="text" class="form-control " ></textarea>
+                                        <textarea type="text" class="form-control " name="pAddress" ></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">ধর্ম</label>
                                     <div class="col-md-4">
-                                        <select class="form-control" name="">
+                                        <select class="form-control" name="religion">
                                             <option>ইসলাম  </option>
                                             <option>হিন্দু </option>
                                             <option>ক্রিস্টান</option>
@@ -428,28 +428,28 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">শিক্ষাগত যোগ্যতা</label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " >
+                                        <input type="text" class="form-control " name="education" >
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">মোবাইল নাম্বার</label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control" >
+                                        <input type="text" class="form-control" name="mobileNo" >
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">ইমেইল আইডি</label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control" >
+                                        <input type="text" class="form-control" name="email" >
                                     </div>
                                 </div>
 
                                     <div class="form-group localBd">
                                         <label class="col-md-3 control-label">বিভাগ</label>
                                         <div class="col-md-4">
-                                            <select class="form-control" name="">
+                                            <select class="form-control" name="division">
                                                 <option>দযা করে সিলেক্ট করুন </option>
                                                 <option>ঢাকা  </option>
                                                 <option>খুলনা </option>
@@ -461,7 +461,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <div class="form-group localBd">
                                         <label class="col-md-3 control-label">জেলা</label>
                                         <div class="col-md-4">
-                                            <select class="form-control" name="">
+                                            <select class="form-control" name="district">
                                                 <option>দযা করে সিলেক্ট করুন </option>
                                                 <option>সাভার  </option>
                                                 <option> ঢাকা</option>
@@ -472,7 +472,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <div class="form-group localBd">
                                         <label class="col-md-3 control-label">থানা</label>
                                         <div class="col-md-4">
-                                            <select class="form-control" name="">
+                                            <select class="form-control" name="thana">
                                                 <option>দযা করে সিলেক্ট করুন </option>
                                                 <option>সাভার  সদর </option>
                                                 <option>ঢাকা</option>
@@ -483,7 +483,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <div class="form-group localBd">
                                     <label class="col-md-3 control-label">ওয়ার্ড  </label>
                                     <div class="col-md-4">
-                                        <select class="form-control" name="">
+                                        <select class="form-control" name="word">
                                             <option>দযা করে সিলেক্ট করুন </option>
                                             <option>ওয়ার্ড নম্বর ১</option>
                                             <option>ওয়ার্ড নম্বর ২</option>
@@ -524,21 +524,21 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">নাম</label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control " >
+                                                <input type="text" class="form-control " name = "emergencyName" >
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">ঠিকানা</label>
                                             <div class="col-md-4">
-                                                <textarea type="text" class="form-control " ></textarea>
+                                                <textarea type="text" class="form-control " name="emergencyAddress" ></textarea>
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">সম্পর্ক</label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control " >
+                                                <input type="text" class="form-control " name="emergencyRelation" >
                                             </div>
                                         </div>
 
@@ -551,13 +551,13 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">নাম</label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control " >
+                                                <input type="text" class="form-control " name="servantName" >
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">জাতীয় পরিচয় পত্র</label>
                                             <div class="col-md-4">
-                                                <input id="nationalId" type="text" class="form-control " >
+                                                <input id="nationalId" type="text" class="form-control " name="servantNid">
                                             </div>
                                             <span class="verify" style="cursor:pointer">ভেরিফাই </span>
                                         </div>
@@ -565,13 +565,13 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">মোবাইল নাম্বার</label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control " >
+                                                <input type="text" class="form-control " name="servantMobile">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">স্থায়ী ঠিকানা </label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control " >
+                                                <input type="text" class="form-control " name="Servantpaddress" >
                                             </div>
                                         </div>
                                 </div>
@@ -584,13 +584,13 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">নাম</label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control " >
+                                                <input type="text" class="form-control" name="driverName" >
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">জাতীয় পরিচয় পত্র</label>
                                             <div class="col-md-4">
-                                                <input id="nationalId" type="text" class="form-control " >
+                                                <input id="nationalId" type="text" class="form-control " name="driverNid" >
                                             </div>
                                             <span class="verify" style="cursor:pointer">ভেরিফাই </span>
                                         </div>
@@ -600,7 +600,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">মোবাইল নাম্বার</label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control " >
+                                                <input type="text" class="form-control " name="driverMobile" >
                                             </div>
                                         </div>
                                     </div>
@@ -608,7 +608,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">স্থায়ী ঠিকানা </label>
                                             <div class="col-md-4">
-                                                <textarea type="text" class="form-control " ></textarea>
+                                                <textarea type="text" class="form-control " name="driverPaddress" ></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -622,21 +622,21 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">নাম</label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control " >
+                                                <input type="text" class="form-control " name="previousHouseHolder">
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">মোবাইল নাম্বার</label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control " >
+                                                <input type="text" class="form-control " name="previousHouseHolderMobileNo">
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">স্থায়ী ঠিকানা </label>
                                             <div class="col-md-4">
-                                                <textarea type="text" class="form-control " ></textarea>
+                                                <textarea type="text" class="form-control" name="PreviouspAddress"></textarea>
                                             </div>
                                         </div>
                                 </div>
@@ -645,7 +645,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">পূরবর্তী বাসা সাড়ার কারণ</label>
                                     <div class="col-md-4">
-                                        <textarea type="text" class="form-control "></textarea>
+                                        <textarea type="text" class="form-control " name="reasonOFpreviousHouseLeft"></textarea>
                                     </div>
                                 </div>
 
@@ -655,20 +655,20 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">নাম</label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control" >
+                                                <input type="text" class="form-control" name="currHouseHolderName" >
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">মোবাইল নাম্বার</label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control " >
+                                                <input type="text" class="form-control " name="currHouseHolderMobileNo">
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">স্থায়ী ঠিকানা </label>
                                             <div class="col-md-4">
-                                                <textarea type="text" class="form-control " ></textarea>
+                                                <textarea type="text" class="form-control " name="currHouseHolderPaddress"></textarea>
                                             </div>
                                         </div>
                                 </div>
@@ -677,7 +677,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">বর্তমান বাড়িতে কোন তারিখ থেকে বসবাস </label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " >
+                                        <input type="text" class="form-control " name="startDateOfCurrLiving">
                                     </div>
                                 </div>
 
