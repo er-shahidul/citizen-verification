@@ -16,7 +16,7 @@ if($_GET['mobile_no']){
 }
 
 
-exit;
+
 //echo $response->getBody();
 
 header("Location: holdingaddressList.php");
