@@ -286,9 +286,9 @@ License: You must have a valid license purchased only from themeforest(the above
 										<td>
 											<a href="<?php echo 'holdingaddressView.php?id='.$row['id'];?>" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 											<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
-											<a href= "<?php echo 'holdingaddressList.php?status=delete&id='.$row['id']?>" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
+											<a onclick="return confirm('are you sure?')" href= "<?php echo 'holdingaddressList.php?status=delete&id='.$row['id']?>" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
 											<a href="renterList.php" class="btn purple-plum btn-xs" >ভাড়াটিয়া তালিকা </a>
-											<a href="sms.php" class="btn purple-plum btn-xs" >সেন্ড এস এম এস </a>
+											<a href="sms.php?mobile_no=<?php echo $row['mobileNumber'];  ?>" class="btn purple-plum btn-xs" >সেন্ড এস এম এস </a>
 										</td>
 									</tr>
 								<?php endwhile; endif;  ?>

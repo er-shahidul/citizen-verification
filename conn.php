@@ -1,8 +1,9 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "commonrbs";
-$db = "citizenvarification";
+
+$servername = "teamemicro.emicroportal.com";
+$username = "teamemicro";
+$password = "teamemicro123";
+$db = "renterverification";
 // Create connection
 $conn = new mysqli($servername, $username, $password,$db);
 

@@ -1,5 +1,49 @@
+<?php
+require_once "conn.php";
+
+if($_POST) {
+	$strname = $_POST['name'];
+	$stremail = $_POST['email'];
+	$strfname = $_POST['fname'];
+	$strdivision = $_POST['division'];
+	$strdistrict = $_POST['district'];
+	$strthana = $_POST['thana'];
+	$strword = $_POST['word'];
+
+	$sql = "INSERT INTO user (name,email,fname,division,district,thana,word)
+		VALUES
+		('$strname','$stremail','$strfname','$strdivision','$strdistrict','$strthana','$strword')";
+
+	if ($conn->query($sql) === TRUE) {
+	} else {
+		echo "Error: " . $sql . "<br>" . $conn->error;
+	}
+}
+	$sqlSelect = "SELECT * from user";
+	$result = $conn->query($sqlSelect);
+
+
+if ($_GET['status'] == 'delete') {
+	$sqlDelete = "Delete from user WHERE id=" . $_GET['id'];
+	$conn->query($sqlDelete);
+}
+
+$conn->close();
+
+
+?>
+
 <!DOCTYPE html>
-<!-- 
+<!-- $sqlSelect = "SELECT * from houseHold";
+$result = $conn->query($sqlSelect);
+
+
+if($_GET['status'] == 'delete'){
+	$sqlDelete = "Delete from houseHold WHERE id=".$_GET['id'];
+	$conn->query($sqlDelete);
+}
+
+$conn->close();
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.1
 Version: 3.2.0
 Author: KeenThemes
@@ -43,12 +87,6 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="assets/admin/layout3/css/custom.css" rel="stylesheet" type="text/css">
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
-
-    <style>
-        .checker{
-            display: none;
-        }
-    </style>
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -120,22 +158,25 @@ License: You must have a valid license purchased only from themeforest(the above
 							</tr>
 							</thead>
 							<tbody>
+							<?php if ($result->num_rows > 0):
+							while($row = $result->fetch_assoc()):
+								$id = $row['id'];
+							?>
 							<tr class="odd gradeX">
-                                <td>১</td>
+                                <td><?php echo $id;  ?></td>
 								<td>
-									আল-আমিন
+									<?php echo $row['name'];  ?>
 								</td>
 								<td>
-									আল-আমিন হোসাইন
+									<?php echo $row['email'];  ?>
 								</td>
 								<td>
-									alamin@gmail.com
-								</td>
-								<td>
-                                    <a href="userview.php" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+                                    <a href="<?php echo "userview.php?id=$id";?>" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+									<a href="#" class="btn purple-plum btn-xs" >সম্পাদনা </a>
+									<a onclick="return confirm('are you sure?')" href="<?php echo 'userList.php?id='.$id.'&status=delete';?>" rel="tooltip" title="view-action" class="btn red-flamingo btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> মুছে ফেলুন </a>
 								</td>
 							</tr>
-
+							<?php endwhile; endif; ?>
 							</tbody>
 							</table>
 						</div>

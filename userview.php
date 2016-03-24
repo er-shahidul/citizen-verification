@@ -1,3 +1,14 @@
+<?php
+require_once "conn.php";
+if($_GET['id']){
+    $sqlSelect = "SELECT * from user WHERE id=".$_GET['id'];
+    $records = $conn->query($sqlSelect);
+    $result = $records->fetch_assoc();
+    $conn->close();
+}
+
+?>
+
 <!DOCTYPE html>
 <!--
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.1
@@ -45,12 +56,6 @@ License: You must have a valid license purchased only from themeforest(the above
 
     <!-- END THEME STYLES -->
     <link rel="shortcut icon" href="favicon.ico"/>
-
-    <style>
-        .checker{
-            display: none;
-        }
-    </style>
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -71,7 +76,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <div class="portlet light">
                         <h2>ব্যবহারকারী </h2>
                         <hr>
-                        <div class="portlet-body">
+                        <div style="padding-bottom: 70px;" class="portlet-body">
                             <div class="fileinput-new thumbnail" style="position: absolute; top:100px; left: 700px;">
                                 <img src="http://www.placehold.it/150x150/EFEFEF/AAAAAA&amp;text=no+image" alt=""/>
                             </div>
@@ -80,7 +85,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     নাম:
                                 </div>
                                 <div class="col-md-7 value">
-                                    ---------------------
+                                    <?php echo $result['name']; ?>
                                 </div>
                             </div>
                             <div class="row static-info">
@@ -88,7 +93,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     পিতার নাম :
                                 </div>
                                 <div class="col-md-7 value">
-                                    ---------------------
+                                    <?php echo $result['fname']; ?>
                                 </div>
                             </div>
                             <div class="row static-info">
@@ -96,32 +101,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     ইমেইল আইডি:
                                 </div>
                                 <div class="col-md-7 value">
-                                    ---------------------
-                                </div>
-                            </div>
-                            <div class="row static-info">
-                                <div class="col-md-5 name">
-                                    বৈবাহিক অবস্থা:
-                                </div>
-                                <div class="col-md-7 value">
-                                    ---------------------
-                                </div>
-                            </div>
-
-                            <div class="row static-info">
-                                <div class="col-md-5 name">
-                                    ধর্ম:
-                                </div>
-                                <div class="col-md-7 value">
-                                    ---------------------
-                                </div>
-                            </div>
-                            <div class="row static-info">
-                                <div class="col-md-5 name">
-                                    মোবাইল নাম্বার:
-                                </div>
-                                <div class="col-md-7 value">
-                                    ---------------------
+                                    <?php echo $result['email']; ?>
                                 </div>
                             </div>
                         </div>

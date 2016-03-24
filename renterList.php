@@ -289,7 +289,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
                                     <a href="<?php echo "renterview.php?id=$id";?>" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
 									<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
-									<a href="<?php echo "renterList.php?id=$id&status=delete";?>" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
+									<a  onclick="return confirm('are you sure?')" href="<?php echo "renterList.php?id=$id&status=delete";?>" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
 									<a href="renterList.php?status=add-justify" rel="tooltip" title="allegation" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
 									<a href="status.php?id=$id" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন </a>
 									<a href="justifiedResults.php" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই কৃত ফলাফল </a>

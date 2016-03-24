@@ -77,44 +77,26 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">ব্যবহারকারী নাম </label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " >
+                                        <input name="name" type="text" class="form-control " >
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">ইমেইল আইডি</label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control" >
+                                        <input name="email" type="text" class="form-control" >
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">পিতার নাম </label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " >
+                                        <input name="fname" type="text" class="form-control " >
                                     </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label">বৈবাহিক অবস্থা</label>
-                                    <div class="col-md-4">
-                                        <input type="text" class="form-control " >
-                                    </div>
-                                </div>
-
-
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label">ধর্ম</label>
-                                    <div class="col-md-4">
-                                        <select class="form-control" name="">
-                                            <option>ইসলাম  </option>
-                                            <option>হিন্দু </option>
-                                            <option>ক্রিস্টান</option>
-                                        </select>
-                                    </div>
-                                </div>
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">বিভাগ</label>
                                     <div class="col-md-4">
-                                        <select class="form-control" name="">
+                                        <select class="form-control" name="division">
                                             <option>দযা করে সিলেক্ট করুন </option>
                                             <option>ঢাকা  </option>
                                             <option>খুলনা </option>
@@ -126,7 +108,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">জেলা</label>
                                     <div class="col-md-4">
-                                        <select class="form-control" name="">
+                                        <select class="form-control" name="district">
                                             <option>দযা করে সিলেক্ট করুন </option>
                                             <option>সাভার  </option>
                                             <option> ঢাকা</option>
@@ -137,7 +119,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">থানা</label>
                                     <div class="col-md-4">
-                                        <select class="form-control" name="">
+                                        <select class="form-control" name="thana">
                                             <option>দযা করে সিলেক্ট করুন </option>
                                             <option>সাভার  সদর </option>
                                             <option>ঢাকা</option>
@@ -148,7 +130,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">ওয়ার্ড  </label>
                                     <div class="col-md-4">
-                                        <select class="form-control" name="">
+                                        <select class="form-control" name="word">
                                             <option>দযা করে সিলেক্ট করুন </option>
                                             <option>ওয়ার্ড নম্বর ১</option>
                                             <option>ওয়ার্ড নম্বর ২</option>
@@ -251,8 +233,8 @@ License: You must have a valid license purchased only from themeforest(the above
                 console.log('asci');
                jQuery('#nationalId').toggleClass('spinner');
         })
-
     });
+
 </script>
 </body>
 <!-- END BODY -->
