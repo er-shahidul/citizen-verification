@@ -42,10 +42,11 @@ if($_POST) {
 	$strcurrHouseHolderMobileNo = $_POST['currHouseHolderMobileNo'];
 	$strcurrHouseHolderPaddress = $_POST['currHouseHolderPaddress'];
 	$strstartDateOfCurrLiving = $_POST['startDateOfCurrLiving'];
+	$strHouseHold = $_POST['houserHold_id'];
 
-	$sql = "INSERT INTO renter (name,renterType,nid,workaddress,passport,contry,visaLifeTime,reasonOfEnter,employerNameAddress,fatherName,dob,maritalStatus,pAddress,religion,education,mobileNo,email,division,district,thana,word,emergencyName,emergencyAddress,emergencyRelation,servantName,servantNid,servantMobile,Servantpaddress,driverName,driverNid,driverMobile,driverPaddress,previousHouseHolder,previousHouseHolderMobileNo,PreviouspAddress,reasonOFpreviousHouseLeft,currHouseHolderName,currHouseHolderMobileNo,currHouseHolderPaddress,startDateOfCurrLiving)
+	$sql = "INSERT INTO renter (houserHold_id,name,renterType,nid,workaddress,passport,contry,visaLifeTime,reasonOfEnter,employerNameAddress,fatherName,dob,maritalStatus,pAddress,religion,education,mobileNo,email,division,district,thana,word,emergencyName,emergencyAddress,emergencyRelation,servantName,servantNid,servantMobile,Servantpaddress,driverName,driverNid,driverMobile,driverPaddress,previousHouseHolder,previousHouseHolderMobileNo,PreviouspAddress,reasonOFpreviousHouseLeft,currHouseHolderName,currHouseHolderMobileNo,currHouseHolderPaddress,startDateOfCurrLiving)
 		VALUES
-		('$strname','$strrenterType','$strnid','$strworkaddress','$strpassport','$strcontry','$strvisaLifeTime',
+		('$strHouseHold','$strname','$strrenterType','$strnid','$strworkaddress','$strpassport','$strcontry','$strvisaLifeTime',
 		 '$strreasonOfEnter','$stremployerNameAddress','$strfatherName','$strdob','$strmaritalStatus','$strpAddress','$strreligion','$streducation','$strmobileNo','$stremail','$strdivision','$strdistrict','$strthana','$strword','$stremergencyName',
 		 '$stremergencyAddress','$stremergencyRelation',
 		 '$strservantName','$strservantNid','$strservantMobile','$strServantpaddress','$strdriverName','$strdriverNid','$strdriverMobile','$strdriverPaddress','$strpreviousHouseHolder','$strpreviousHouseHolderMobileNo','$strPreviouspAddress','$strreasonOFpreviousHouseLeft','$strcurrHouseHolderName',
@@ -65,6 +66,11 @@ $result = $conn->query($sqlSelect);
 if($_GET['status'] == 'delete'){
 	$sqlDelete = "Delete from renter WHERE id=".$_GET['id'];
 	$conn->query($sqlDelete);
+}
+
+if(!empty($_GET['house_hold'])){
+	$sqlSelect = "SELECT * from renter WHERE houserHold_id =".$_GET['house_hold'];
+	$result = $conn->query($sqlSelect);
 }
 
 $conn->close();
@@ -169,11 +175,13 @@ License: You must have a valid license purchased only from themeforest(the above
 								<div class="row">
 									<div class="col-md-6">
 										<div class="btn-group">
-                                            <a href="renterNew.php">
+											<?php if(!empty($_GET['house_hold'])): ?>
+                                            <a href="renterNew.php?house_hold=<?php echo $_GET['house_hold'];?>">
                                                 <button id="sample_editable_1_new" class="btn green">
 													নুতন যোগ করুন  <i class="fa fa-plus"></i>
                                                 </button>
                                             </a>
+											<?php endif; ?>
 										</div>
 									</div>
 								</div>
@@ -253,6 +261,10 @@ License: You must have a valid license purchased only from themeforest(the above
 								<th>
 									নাম
 								</th>
+
+								<th>
+									হোল্ডিং আইডি
+								</th>
 								<th>
 									মোবাইল নাম্বার
 								</th>
@@ -274,21 +286,24 @@ License: You must have a valid license purchased only from themeforest(the above
 							<tr class="odd gradeX">
                                 <td><?php  $id = $row['id']; echo $id; ?></td>
 								<td>
-									<?php echo $row['name'] ?>
+									<?php echo $row['name']; ?>
 								</td>
 								<td>
-									<?php echo $row['mobileNo'] ?>
+									<?php echo $row['houserHold_id']; ?>
 								</td>
 								<td>
-									<?php echo $row['nid'] ?>
+									<?php echo $row['mobileNo']; ?>
+								</td>
+								<td>
+									<?php echo $row['nid']; ?>
 								</td>
 								<td>
 									<?php echo isset($row['status'])? $row['status']:"Active"; ?>
 								</td>
 								<td>
 
-                                    <a href="<?php echo "renterview.php?id=$id";?>" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
-									<a href="holdingaddressEdit.php" class="btn purple-plum btn-xs" >সম্পাদনা </a>
+                                    <a href="" rel="tooltip" title="view-action" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i> দেখুন </a>
+									<a href="<?php echo "renterEdit.php?id=$id";?>" class="btn purple-plum btn-xs" >সম্পাদনা </a>
 									<a  onclick="return confirm('are you sure?')" href="<?php echo "renterList.php?id=$id&status=delete";?>" class="btn red-flamingo btn-xs" >মুছে ফেলুন</a>
 									<a href="renterList.php?status=add-justify" rel="tooltip" title="allegation" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>যাচাই করুন  </a>
 									<a href="status.php?id=$id" rel="tooltip" title="status" class="btn purple-plum btn-xs" role="button"><i class="glyphicon glyphicon-view"></i>অকার্যকর করুন </a>

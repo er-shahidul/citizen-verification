@@ -1,3 +1,13 @@
+<?php
+require_once "conn.php";
+
+$sqlSelect = "SELECT * from houseHold WHERE id=".$_GET['id'];
+$records = $conn->query($sqlSelect);
+$result = $records->fetch_assoc();
+$data = json_decode($result['data']);
+$conn->close();
+?>
+
 <!DOCTYPE html>
 <!--
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.1
@@ -76,41 +86,41 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">নাম </label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " >
+                                        <input type="text" class="form-control " value="<?php echo $result['name'] ?>" >
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">পিতার নাম </label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " >
+                                        <input type="text" class="form-control " value="<?php echo $result['fatherName'] ?>" >
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">জন্ম তারিখ</label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " >
+                                        <input type="text" class="form-control " value="<?php echo $result['brd'] ?>" >
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">বৈবাহিক অবস্থা</label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " >
+                                        <input type="text" class="form-control " value="<?php echo $result['mariatalStatus'] ?>" >
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">স্থায়ী ঠিকানা </label>
                                     <div class="col-md-4">
-                                        <textarea type="text" class="form-control " ></textarea>
+                                        <textarea type="text" class="form-control " value="<?php echo $result['paddress'] ?>" ></textarea>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">পেশা ও প্রতিষ্টান কর্মস্তলের ঠিকানা</label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " >
+                                        <input type="text" class="form-control " value="<?php echo $result['workaddress'] ?>" >
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -128,7 +138,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">ভাড়াটিয়ার সংখা </label>
                                     <div class="col-md-4">
-                                        <input type="number" class="form-control" >
+                                        <input type="number" class="form-control" value="<?php echo $result['renterNumber'] ?>" >
                                     </div>
                                 </div>
 
@@ -146,28 +156,28 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">শিক্ষাগত যোগ্যতা</label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " >
+                                        <input type="text" class="form-control " value="<?php echo $result['eduqualification'] ?>" >
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">মোবাইল নাম্বার</label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control" >
+                                        <input type="text" class="form-control" value="<?php echo $result['mobileNumber'] ?>" >
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">ইমেইল আইডি</label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control" >
+                                        <input type="text" class="form-control" value="<?php echo $result['Email'] ?>" >
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">পাসপোর্ট নাম্বার </label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " >
+                                        <input type="text" class="form-control " value="<?php echo $result['passportNumber'] ?>" >
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -248,21 +258,21 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">নাম</label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control " >
+                                                <input type="text" class="form-control " value="<?php echo $result['emergencyName'] ?>">
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">ঠিকানা</label>
                                             <div class="col-md-4">
-                                                <textarea type="text" class="form-control " ></textarea>
+                                                <textarea type="text" class="form-control " ><?php echo $result['emergencyAddress']; ?></textarea>
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">সম্পর্ক</label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control " >
+                                                <input type="text" class="form-control " value="<?php echo $result['emergencyRelation'] ?>">
                                             </div>
                                         </div>
 
@@ -275,13 +285,13 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">নাম</label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control " >
+                                                <input type="text" class="form-control " value="<?php echo $result['servantName'] ?>">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">জাতীয় পরিচয় পত্র</label>
                                             <div class="col-md-4">
-                                                <input id="nationalId" type="text" class="form-control " >
+                                                <input id="nationalId" type="text" class="form-control " value="<?php echo $result['servantNid'] ?>" >
                                             </div>
                                             <span class="verify" style="cursor:pointer">ভেরিফাই </span>
                                         </div>
@@ -289,13 +299,13 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">মোবাইল নাম্বার</label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control " >
+                                                <input type="text" class="form-control " value="<?php echo $result['servantMobileNo'] ?>">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">স্থায়ী ঠিকানা </label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control " >
+                                                <input type="text" class="form-control " value="<?php echo $result['servantParmanentAddress'] ?>" >
                                             </div>
                                         </div>
                                     </div>
@@ -307,13 +317,13 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">নাম</label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control " >
+                                                <input type="text" class="form-control " value="<?php echo $result['driverName'] ?>">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">জাতীয় পরিচয় পত্র</label>
                                             <div class="col-md-4">
-                                                <input id="nationalId" type="text" class="form-control " >
+                                                <input id="nationalId" type="text" class="form-control " value="<?php echo $result['driverNid'] ?>">
                                             </div>
                                             <span class="verify" style="cursor:pointer">ভেরিফাই </span>
                                         </div>
@@ -321,13 +331,13 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">মোবাইল নাম্বার</label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control " >
+                                                <input type="text" class="form-control " value="<?php echo $result['diriverMobileNo'] ?>" >
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">স্থায়ী ঠিকানা </label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control " >
+                                                <input type="text" class="form-control " value="<?php echo $result['driverParmanentAddress'] ?>">
                                             </div>
                                         </div>
                                     </div>
@@ -339,13 +349,13 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">নাম</label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control " >
+                                                <input type="text" class="form-control " value="<?php echo $result['guardName'] ?>">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">জাতীয় পরিচয় পত্র</label>
                                             <div class="col-md-4">
-                                                <input id="nationalId" type="text" class="form-control " >
+                                                <input id="nationalId" type="text" class="form-control " value="<?php echo $result['guardNid'] ?>">
                                             </div>
                                             <span class="verify" style="cursor:pointer">ভেরিফাই </span>
                                         </div>
@@ -353,13 +363,13 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">মোবাইল নাম্বার</label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control " >
+                                                <input type="text" class="form-control " value="<?php echo $result['guardMobileNo'] ?>">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-md-3 control-label">স্থায়ী ঠিকানা </label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control " >
+                                                <input type="text" class="form-control " value="<?php echo $result['guardPermanentAddress'] ?>">
                                             </div>
                                         </div>
                                     </div>

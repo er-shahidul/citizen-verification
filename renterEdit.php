@@ -1,3 +1,12 @@
+<?php
+require_once "conn.php";
+
+$sqlSelect = "SELECT * from renter WHERE id=".$_GET['id'];
+$records = $conn->query($sqlSelect);
+$result = $records->fetch_assoc();
+$conn->close();
+?>
+
 <!DOCTYPE html>
 <!--
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.1
@@ -72,12 +81,12 @@ License: You must have a valid license purchased only from themeforest(the above
                     <div class="portlet light">
                         <h2>ভাড়াটিয়া যোগ করুন </h2>
                         <hr>
-                        <form  method="post" action="renterList.php?status=saved&house_hold=<?php echo $_GET['house_hold'] ?>" class="form-horizontal">
+                        <form  method="post" action="renterList.php?status=saved" class="form-horizontal">
                             <div class="form-body">
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">ভাড়াটিয়া  নাম </label>
                                     <div class="col-md-4">
-                                        <input type="text" name="name" class="form-control " >
+                                        <input type="text" name="name" class="form-control " value="<?php echo $result['name'] ?>">
                                     </div>
                                 </div>
 
@@ -93,7 +102,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">জাতীয় পরিচয় পত্র</label>
                                     <div class="col-md-4">
-                                        <input id="nationalId" type="text" name="nid" class="form-control " >
+                                        <input id="nationalId" type="text" name="nid" class="form-control " value="<?php echo $result['name'] ?>">
                                     </div>
                                     <span class="verify" style="cursor:pointer">ভেরিফাই </span>
                                 </div>
@@ -101,14 +110,14 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="form-group">
                                     <label class="col-md-3 control-label"> পেশা ও প্রতিষ্টান কর্মস্তলের ঠিকানা </label>
                                     <div class="col-md-4">
-                                        <textarea type="text" name="workaddress" class="form-control " ></textarea>
+                                        <textarea type="text" name="workaddress" class="form-control " ><?php echo $result['name'] ?></textarea>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">পাসপোর্ট নাম্বার </label>
                                     <div class="col-md-4">
-                                        <input type="text" name="passport" class="form-control " >
+                                        <input type="text" name="passport" class="form-control " value="<?php echo $result['name'] ?>">
                                     </div>
                                 </div>
 
@@ -369,35 +378,35 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="form-group foreigner">
                                     <label class="col-md-3 control-label">ভিসার মিয়াদ</label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " name="visaLifeTime">
+                                        <input type="text" class="form-control " name="visaLifeTime" value="<?php echo $result['name'] ?>">
                                     </div>
                                 </div>
 
                                 <div class="form-group foreigner">
                                     <label class="col-md-3 control-label">দেশে প্রবেশের বিবরণ </label>
                                     <div class="col-md-4">
-                                        <textarea type="text" class="form-control " name="reasonOfEnter" ></textarea>
+                                        <textarea type="text" class="form-control " name="reasonOfEnter" ><?php echo $result['name'] ?></textarea>
                                     </div>
                                 </div>
 
                                 <div class="form-group foreigner">
                                     <label class="col-md-3 control-label">চাকুরী দাতার নাম ও ঠিকানা </label>
                                     <div class="col-md-4">
-                                        <textarea type="text" class="form-control " name="employerNameAddress" ></textarea>
+                                        <textarea type="text" class="form-control " name="employerNameAddress" ><?php echo $result['name'] ?></textarea>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">পিতার নাম </label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " name="fatherName">
+                                        <input type="text" class="form-control " name="fatherName" value="<?php echo $result['name'] ?>">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="col-md-3 control-label" >জন্ম তারিখ</label>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control " name="dob">
+                                        <input type="text" class="form-control " name="dob" value="<?php echo $result['name'] ?>">
                                     </div>
                                 </div>
 
@@ -679,8 +688,6 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <div class="col-md-4">
                                         <input type="text" class="form-control " name="startDateOfCurrLiving">
                                     </div>
-
-                                     <input type="hidden" class="form-control " name="houserHold_id" value="<?php echo $_GET['house_hold'] ?>">
                                 </div>
 
                             <div class="form-actions">
