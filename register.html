@@ -50,6 +50,15 @@
         .fancybox-custom .fancybox-skin {
             box-shadow: 0 0 50px #222;
         }
+        .control-label{
+            margin-right: 20px;
+        }
+        .form-group{
+            margin: 3px 0;
+        }
+        .verify{
+            float: right;
+        }
     </style>
 
     <!-- FANCY BOX END -->
@@ -89,10 +98,16 @@
 
     <!-- HEADER START -->
 
-    <div class="span5 dmp_logo">
-        <a href="/application">
-            <img src="/img/dmp_logo.png" width="510" height="91" border="0">
-        </a>
+    <div class="dmp_logo">
+        <div style="float: left; width: 470px;">
+            <a  href="/">
+                <img src="/img/dmp_logo.png" width="510" height="91" border="0">
+            </a>
+        </div>
+
+        <div style="float: right;width: 200px; margin-top: 45px;">
+            <a href="admin/login.html">Login</a>
+        </div>
     </div>
 
     <div class="span12" style="margin:0px;">
@@ -107,12 +122,11 @@
                     <span class="icon-bar"></span>
                 </button>
 
-
                 <div class="nav-collapse collapse">
                     <ul class="nav">
 
                         <li>
-                            <a href="#" class="dropdown-toggle" data-hover="dropdown">Home</a>
+                            <a href="/" class="dropdown-toggle" data-hover="dropdown">Home</a>
                         </li>
 
 
@@ -131,7 +145,6 @@
 
                 </div>
             </div>
-
         </div>
 
     </div>
@@ -144,7 +157,7 @@
     <div class="row-fluid">
 
         <div class="bottom_body">
-            <form method="post" action="holdingaddressList.php?status=saved" class="form-horizontal">
+            <form method="post" action="admin/holdingaddressList.php?status=saved" class="form-horizontal">
                 <div class="form-body">
                     <div class="form-group">
                         <label class="col-md-3 control-label">নাম </label>
@@ -344,7 +357,7 @@
                                 <div class="col-md-4">
                                     <input id="nationalId" type="text" class="form-control " name="servantNid">
                                 </div>
-                                <span class="verify" style="cursor:pointer">ভেরিফাই </span>
+                                <!--<span class="verify" style="cursor:pointer">ভেরিফাই </span>-->
                             </div>
 
                             <div class="form-group">
@@ -376,7 +389,7 @@
                                 <div class="col-md-4">
                                     <input id="nationalId" type="text" class="form-control " name="driverNid">
                                 </div>
-                                <span class="verify" style="cursor:pointer">ভেরিফাই </span>
+                              <!--  <span class="verify" style="cursor:pointer">ভেরিফাই </span>-->
                             </div>
 
                             <div class="form-group">
@@ -408,7 +421,7 @@
                                 <div class="col-md-4">
                                     <input id="nationalId" type="text" class="form-control " name="guardNid">
                                 </div>
-                                <span class="verify" style="cursor:pointer">ভেরিফাই </span>
+                                <!--<span class="verify" style="cursor:pointer">ভেরিফাই </span>-->
                             </div>
 
                             <div class="form-group">
